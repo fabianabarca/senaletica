@@ -12,7 +12,7 @@ Esta propuesta está regida por varias premisas:
 
 - Conformidad con el [manual de identidad visual](./referencias/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica
 - Conformidad con la norma nacional [INTE W5 2021](./referencias/norma_INTE_W5_2021.pdf), denominada "Accesibilidad al medio físico. Edificios, espacios urbanos y rurales. Señalización Accesible."
-- (Alguna otra referencia)
+- Estándares y guías de [diseño de MBTA](https://www.mbta.com/engineering/design-standards-and-guidelines) (Boston)
 
 ### Ámbito de aplicación
 
