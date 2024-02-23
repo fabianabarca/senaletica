@@ -4,7 +4,7 @@ Un sistema de señalética (*wayfinding*, en inglés) es...
 
 > Interacción entre los signos en el espacio y el comportamiento del usuario
 
-## Filosoría del sistema de diseño
+## Filosofía del sistema de diseño
 
 Un sistema de señalética prioriza la claridad taca taca...
 
@@ -37,4 +37,9 @@ La referencia GTFS para el sistema está [este enlace](https://docs.google.com/s
 
 - 
 
-## 
+## El ***b***
+
+(Explicación del isotipo de *b*UCR)
+
+## Otros elementos de diseño
+

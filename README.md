@@ -4,7 +4,9 @@
 
 ## Documentación
 
-El archivo IDENTIDAD.md detalla el sistema de diseño (colores, tipografía, etc.) basado en la identidad visual de la UCR. El archivo ESPECIFICACION.md
+El archivo `SENALETICA.md` detalla el sistema de diseño (colores, tipografía, etc.) basado en la identidad visual de la UCR. 
+
+En el directorio `/especificaciones` están las especificaciones de diseño para...
 
 ## Ejemplos
 
@@ -16,3 +18,5 @@ Slogans:
 
 - "el ***b*** es el bus de la U"
 - "UCR con ***b*** de bus"
+
+
