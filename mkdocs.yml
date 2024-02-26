@@ -1,0 +1,29 @@
+site_name: Sistema de señalética del bus interno de la Universidad de Costa Rica
+
+nav:
+    - Inicio: index.md
+    - Elementos: senaletica.md
+    - Infraestructura: infraestructura.md
+    - Vehículos: vehiculos.md
+    - Impresiones: impresiones.md
+    - Sitios web: web.md
+    - GTFS: gtfs.md
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: ucr
+  logo: assets/b.png
+  features:
+    - navigation.expand
+    - navigation.tabs
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

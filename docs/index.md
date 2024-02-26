@@ -1,8 +1,9 @@
-# Elementos del sistema de señalética de *b*UCR
+# Sistema de señalética de *b*UCR
 
 Un sistema de señalética (*wayfinding*, en inglés) es...
 
-> Interacción entre los signos en el espacio y el comportamiento del usuario
+!!! quote "Señalética"
+    Interacción entre los signos en el espacio y el comportamiento del usuario
 
 ## Filosofía del sistema de diseño
 
@@ -10,8 +11,8 @@ Un sistema de señalética prioriza la claridad taca taca...
 
 Esta propuesta está regida por varias premisas:
 
-- Conformidad con el [manual de identidad visual](./referencias/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica
-- Conformidad con la norma nacional [INTE W5 2021](./referencias/norma_INTE_W5_2021.pdf), denominada "Accesibilidad al medio físico. Edificios, espacios urbanos y rurales. Señalización Accesible."
+- Conformidad con el [manual de identidad visual](./assets/references/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica
+- Conformidad con la norma nacional [INTE W5 2021](./assets/references/norma_INTE_W5_2021.pdf), denominada "Accesibilidad al medio físico. Edificios, espacios urbanos y rurales. Señalización Accesible."
 - Estándares y guías de [diseño de MBTA](https://www.mbta.com/engineering/design-standards-and-guidelines) (Boston)
 
 ### Ámbito de aplicación
@@ -32,13 +33,3 @@ La referencia GTFS para el sistema está [este enlace](https://docs.google.com/s
 - El servicio tiene dos rutas:
     - **L1**: hace un recorrido por la "milla universitaria" en finca 1
     - **L2**: no hace un recorrido por la "milla universitaria" en finca 1 y solamente recorren un sentido finca 1 a finca 3
-
-## Lista de elementos de señalética para *b*UCR
-
-- 
-
-## El ***b***
-
-(Explicación del isotipo de *b*UCR)
-
-## Otros elementos de diseño
