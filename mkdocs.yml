@@ -18,6 +18,7 @@ theme:
   palette:
     scheme: ucr
   logo: assets/b.png
+  favicon: assets/b.png
   features:
     - navigation.expand
     - navigation.tabs
