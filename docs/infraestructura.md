@@ -10,10 +10,12 @@ Para el uso del logo en las paradas se debe respetar las mismas especificaciones
 
 ## El ***b*** con placa de nombre
 
-- Tamaño comparable con un ALTO. Según el inciso 3, del artículo 27, del Sistema Costarricense de Información Jurídica (SCIJ) de la Procuraduría General de la República "el ancho normal de la señal de parada deberá ser de 60 cm. como mínimo". Por lo tanto se usó esta medida como referecia y se diseñó el logo con un diámetro de 60 cm.
-(https://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=65539&nValor3=76620&strTipM=TC)
+- Tamaño comparable con un ALTO. Según el [inciso 3, del artículo 27, del Sistema Costarricense de Información Jurídica (SCIJ) de la Procuraduría General de la República](https://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=65539&nValor3=76620&strTipM=TC) "el ancho normal de la señal de parada deberá ser de 60 cm. como mínimo". Por lo tanto se usó esta medida como referecia y se diseñó el logo con un diámetro de 60 cm.
 
 - Tiene placa separada debajo con el nombre de la parada. Esta placa debe ser del mismo ancho del logo de ***b***, o sea 60 cm en la mayoria de los casos. La altura de esta se;al dependera de si el nombre de la parada es de una o dos lineas. En caso de ser de una linea debera ser de 30 cm de alto. En caso de ser de dos lineas debera ser de 45 cm de alto.
+
+![Placas con el nombre de la parada](./assets/logos/Rotulo%20de%20parada%20peq.svg)
+
 - El tama;o de la letra debera estar en un rango entre X cm y X cm, en conformidad con la norma INTECO........
 
 ## Rótulo nombre de parada respaldar trasero
