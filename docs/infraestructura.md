@@ -20,15 +20,21 @@ Para el uso del logo en las paradas se debe respetar las mismas especificaciones
 
 ## Rótulo nombre de parada respaldar trasero
 
+![Ejemplo de señal trasera](./assets/logos/senal%20trasera.png)
+
 Elementos:
 
-- **Logo "b"**
-- **Nombre de la parada**
-- (Opcional) "el ***b*** es el bus de la U"/"UCR con ***b*** de bus" (¿este es el lugar?)
+- **Logo "b"** y **Nombre de la parada**
+![Logo y nombre de la parada](./assets/logos/senal%20trasera%20sola.svg)
+- Opcionalmente se puede agregar el slogan del servicio. Las dos opciones por el momento son: "el ***b*** es el bus de la U" o "UCR con ***b*** de bus".
 
-Símbolos de rutas deben ser independientes, porque no son necesariamente permanentes (puede haber cambios de nombre o colores o rutas nuevas o rutas eliminadas, etc.), por tanto, necesitamos una opción flexible.
+Los símbolos de rutas deben ser independientes, porque no son necesariamente permanentes (puede haber cambios de nombre o colores o rutas nuevas o rutas eliminadas, etc.), por tanto, necesitamos mantener una opcion que nos permita ser flexibles.
+
+![Rótulos de rutas](./assets/logos/rotulos%20de%20rutas.svg)
 
 - Anexo: símbolos de rutas
+
+![símbolos de rutas](./assets/logos/rutas.svg)
 
 Tamaño
 
