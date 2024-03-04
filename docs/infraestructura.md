@@ -36,11 +36,11 @@ Tamaño
 
 - El círculo que rodea a la letra ***b*** tiene un grosor de 1.9 cm, y esta a una distancia de 1.3 cm. Esto de acuerdo con el Manual Centroamericano de Dispositivos Uniformes para el Control de Transito.
 
-- ![Circulo alrededor de la ***b***](./assets/logos/Circulo de la b.svg)
+![Circulo de la ***b***](./assets/logos/Circulo%20de%20la%20b.svg)
 
 - El tamaño de la ***b*** ocupará el espacio de 4/6, centrada en sentido vertical, medidos desde el interior de la linea de circunferencia.
 
-[diagrama con las dimensiones]
+![Tamaño de la ***b***](./assets/logos/tamano%20de%20la%20b.svgs/)
 
 - La letra ***b*** es una b minúscula en tipografía Myriad Pro, negrita.
 - Áreas de respeto: El logo requiere respetar una distancia minima al rededor del mismo equivalente a al menos 1/4 del diametro del logo.
