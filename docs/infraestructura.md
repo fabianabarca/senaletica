@@ -45,16 +45,14 @@ Tamaño
 - La letra ***b*** es una b minúscula en tipografía Myriad Pro, negrita.
 - Áreas de respeto: El logo requiere respetar una distancia minima al rededor del mismo equivalente a al menos 1/4 del diametro del logo.
 
-[diagrama con las dimensiones]
+![Area de respeto](./assets/logos/Area%20de%20respeto.svg)
 
 - Colores: Para el logo en su forma principal se utiliza el color blanco (#FFF) para el circulo que rodea el logo y la ***b***; y el "celeste UCR" (#00c0f3) para el fondo del mismo.
 
-[diagrama con los colores]
-
 - Usos en blanco y negro: Para aplicaciones en blanco y negro o alto contraste se puede cambiar el color celeste por negro, asi logrando generar el contraste adecuado para la mayoria de las aplicaciones. 
 
-[diagrama con las distintas opciones]
+![Logo en alto contraste](./assets/logos/alto%20contraste.svg)
 
 - Alternativamente se puede usar la una version en negativo, donde el celeste se puede remplazar por blanco, y las areas blancas por negro. Esta aplicacion es especialmente util para stickers simples que ayuden a demarcar elementos especificos en las paradas. (Ver ejemplo de uso de "the T")
 
-[diagrama con las distintas opciones]
+![Negativo](./assets/logos/negativo.svg)
