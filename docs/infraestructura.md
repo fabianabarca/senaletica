@@ -8,8 +8,6 @@ Para el uso del logo en las paradas se debe respetar las mismas especificaciones
 
 <!--hacer que cada uno de los items de la lista sea un link a la seccion correspondiente en el documento senaletica.md-->
 
-
-
 ## El ***b*** con placa de nombre
 
 - Tamaño comparable con un ALTO. Según el inciso 3, del artículo 27, del Sistema Costarricense de Información Jurídica (SCIJ) de la Procuraduría General de la República "el ancho normal de la señal de parada deberá ser de 60 cm. como mínimo". Por lo tanto se usó esta medida como referecia y se diseñó el logo con un diámetro de 60 cm.
@@ -36,10 +34,27 @@ Tamaño
 
 ## Especificaciones del logo
 
-- El círculo que rodea a la letra ***b*** tiene un grosor de 1.9 cm, y esta a una distancia de 1.3 cm. Esto de acuerdo con 
+- El círculo que rodea a la letra ***b*** tiene un grosor de 1.9 cm, y esta a una distancia de 1.3 cm. Esto de acuerdo con el Manual Centroamericano de Dispositivos Uniformes para el Control de Transito.
+
+- ![Circulo alrededor de la ***b***](./assets/logos/Circulo de la b.svg)
+
 - El tamaño de la ***b*** ocupará el espacio de 4/6, centrada en sentido vertical, medidos desde el interior de la linea de circunferencia.
+
+[diagrama con las dimensiones]
+
 - La letra ***b*** es una b minúscula en tipografía Myriad Pro, negrita.
 - Áreas de respeto: El logo requiere respetar una distancia minima al rededor del mismo equivalente a al menos 1/4 del diametro del logo.
+
+[diagrama con las dimensiones]
+
 - Colores: Para el logo en su forma principal se utiliza el color blanco (#FFF) para el circulo que rodea el logo y la ***b***; y el "celeste UCR" (#00c0f3) para el fondo del mismo.
+
+[diagrama con los colores]
+
 - Usos en blanco y negro: Para aplicaciones en blanco y negro o alto contraste se puede cambiar el color celeste por negro, asi logrando generar el contraste adecuado para la mayoria de las aplicaciones. 
+
+[diagrama con las distintas opciones]
+
 - Alternativamente se puede usar la una version en negativo, donde el celeste se puede remplazar por blanco, y las areas blancas por negro. Esta aplicacion es especialmente util para stickers simples que ayuden a demarcar elementos especificos en las paradas. (Ver ejemplo de uso de "the T")
+
+[diagrama con las distintas opciones]
