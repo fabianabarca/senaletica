@@ -16,7 +16,7 @@ Para el uso del logo en las paradas se debe respetar las mismas especificaciones
 
 ![Placas con el nombre de la parada](./assets/logos/Rotulo%20de%20parada%20peq.svg)
 
-- El tama;o de la letra debera estar en un rango entre X cm y X cm, en conformidad con la norma INTECO........
+- El tamaño de la letra debera estar en un rango entre 56 mm y 110 mm, en conformidad con la norma INTECO 5.1.1.2 Tamaño para la lectura visual, dando asi los mejores resultados de lectura entre 2 m y 5 m de distancia del usuario al rotulo.
 
 ## Rótulo nombre de parada respaldar trasero
 
@@ -42,7 +42,7 @@ Tamaño
 
 - El tamaño de la ***b*** ocupará el espacio de 4/6, centrada en sentido vertical, medidos desde el interior de la linea de circunferencia.
 
-![Tamaño de la ***b***](./assets/logos/tamano%20de%20la%20b.svgs/)
+![Tamaño de la ***b***](./assets/logos/tamano%20de%20la%20b.svg)
 
 - La letra ***b*** es una b minúscula en tipografía Myriad Pro, negrita.
 - Áreas de respeto: El logo requiere respetar una distancia minima al rededor del mismo equivalente a al menos 1/4 del diametro del logo.
