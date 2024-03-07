@@ -39,20 +39,21 @@ Este logotipo consiste en un círculo que engloba la letra "b", como referencia 
 ![Tamaño de la ***b***](./assets/logos/tamano%20de%20la%20b.svg)
 
 - La letra ***b*** es una b minúscula en tipografía Myriad Pro, negrita.
-- Áreas de respeto: El logo requiere respetar una distancia minima al rededor del mismo equivalente a al menos 1/4 del diametro del logo.
+- Áreas de respeto: Para el posicionamiento del logo se necesita respetar una distancia mínima equivalente a al menos 1/4 del diametro alrederor.
 
 ![Area de respeto](./assets/logos/Area%20de%20respeto.svg)
 
-- Colores: Para el logo en su forma principal se utiliza el color blanco (#FFF) para el circulo que rodea el logo y la ***b***; y el "celeste UCR" (#00c0f3) para el fondo del mismo.
+- Colores: Para el logo en su forma principal se utiliza el color blanco (#FFF) para el circulo que rodea el logo y la ***b***; y el "celeste UCR" (#00c0f3) para el fondo.
 
-- Usos en blanco y negro: Para aplicaciones en blanco y negro o alto contraste se puede cambiar el color celeste por negro, asi logrando generar el contraste adecuado para la mayoria de las aplicaciones. 
+- Usos en blanco y negro: Para aplicaciones en blanco y negro o alto contraste se puede cambiar el color celeste por negro, así logrando generar el contraste adecuado para la mayoría de las aplicaciones. 
 
 ![Logo en alto contraste](./assets/logos/alto%20contraste.svg)
 
-- Alternativamente se puede usar la una version en negativo, donde el celeste se puede remplazar por blanco, y las areas blancas por negro. Esta aplicacion es especialmente util para stickers simples que ayuden a demarcar elementos especificos en las paradas. (Ver ejemplo de uso de "the T")
+- Alternativamente se puede usar la una version en negativo, donde el celeste se puede remplazar por blanco, y las areas blancas por negro. Esta aplicación es especialmente util para stickers simples que ayuden a demarcar elementos específicos en las paradas. (Ver ejemplo de uso de "the T")
 
 ![Negativo](./assets/logos/negativo.svg)
+![Ejemplo de T](./assets/logos/MBTA%20our-work-screens.png)
 
 ## Otros elementos de diseño
 
-- Slogan
+- Slogan: Las dos opciones por el momento son: "el ***b*** es el bus de la U" o "UCR con ***b*** de bus".
