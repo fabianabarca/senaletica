@@ -17,8 +17,8 @@ theme:
   language: es
   palette:
     scheme: ucr
-  logo: assets/logos/b.png
-  favicon: assets/logos/b.png
+  logo: assets/logos/b_celeste_fondo_blanco.svg
+  favicon: assets/logos/b_azul_fondo_blanco.svg
   features:
     - navigation.expand
     - navigation.tabs
