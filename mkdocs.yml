@@ -23,9 +23,11 @@ theme:
   features:
     - navigation.expand
     - navigation.tabs
+    - navigation.footer
     - toc.integrate
 
 markdown_extensions:
+  - footnotes
   - admonition
   - pymdownx.details
   - pymdownx.superfences 

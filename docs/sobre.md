@@ -15,6 +15,9 @@ La propuesta del sistema de señalética es una parte de la implementación del 
 - Seminario de graduación de licenciatura "Diseño de una arquitectura de referencia para un sistema inteligente de transporte público en Costa Rica"
 - Proyecto de investigación 322-C3-184 "Análisis de datos abiertos de sistemas inteligentes de transporte público con herramientas de aprendizaje automático"
 
+Bajo la coordinación del profesor Fabián Abarca Calderón.
+
 ### Oficina de Servicios Generales (OSG)
 - Dirección
 - Departamento de Transportes
+
