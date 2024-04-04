@@ -37,3 +37,6 @@ markdown_extensions:
 
 repo_url: https://github.com/fabianabarca/senaletica
 repo_name: fabianabarca/senaletica
+
+extra:
+  generator: false
