@@ -1,3 +1,4 @@
-# Especificación del diseño de la rotulación de autobuses
+# Diseño de la rotulación de autobuses
 
-Ahora sí, dijo Tapón...
+!!! warning "Sección en construcción"
+    Pronto tendremos más actualizaciones.

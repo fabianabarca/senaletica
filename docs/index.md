@@ -1,10 +1,14 @@
-# Sistema de señalética de *b*UCR
+# Sistema de señalética del bus interno de la UCR
 
 Un sistema de señalética (*wayfinding*, en inglés) es...
 
 !!! quote "Señalética"
+    Conjunto de señales para informar de algo.
+    <br>
+    <small>Diccionario de la lengua española</small>
+    
     Interacción entre los signos en el espacio y el comportamiento del usuario
-
+    <br>
     <small>Joan Costa</small>
 
 ## Filosofía del sistema de diseño
@@ -36,12 +40,3 @@ La referencia GTFS para el sistema está [este enlace](https://docs.google.com/s
 - El servicio tiene dos rutas:
     - **L1**: hace un recorrido por la "milla universitaria" en finca 1
     - **L2**: no hace un recorrido por la "milla universitaria" en finca 1 y solamente recorren un sentido finca 1 a finca 3
-
-<div class="grid cards" markdown>
-
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
-
-</div>

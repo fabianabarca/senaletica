@@ -1,3 +1,4 @@
-# Especificación del diseño de material impreso y artículos promocionales
+# Diseño de material impreso y artículos promocionales
 
-Everything is gonna be alright...
+!!! warning "Sección en construcción"
+    Pronto tendremos más actualizaciones.
