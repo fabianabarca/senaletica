@@ -14,7 +14,7 @@ En esencia, cada parada tiene dos elementos: **el *b***, como un rótulo circula
 
 ## Nombre de la parada tipo cartel
 
-Está localizado en la parte trasera de la parada, con vista desde la calle. Es de gran tamaño, pues sis dimensiones pueden ser del orden de 30 cm de alto por 120 cm de ancho (pendiente de definición).
+Está localizado en la parte trasera de la parada, con vista desde la calle. Es de gran tamaño, pues sus dimensiones pueden ser del orden de 30 cm de alto por 120 cm de ancho (pendiente de definición).
 
 <img src="../assets/png/parada_horizontal.png" width="600px" alt="Rótulo horizontal parada Escuela de Artes Plásticas"/>
 

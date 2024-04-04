@@ -79,7 +79,7 @@ Consiste en un círculo que engloba la letra ***b***, como referencia a la palab
 <img src="../assets/logos/b_verde.png" width="60px" alt="Logo el b bUCR verde"/>
 <img src="../assets/logos/b_negro.png" width="60px" alt="Logo el b bUCR negro"/>
 
-- Admite versiones con un marco cuadrado de color
+- Admite versiones con un marco cuadrado de color.
 
 <img src="../assets/logos/b_cuadrado_azul.png" width="80px" alt="Logo el b bUCR azul"/>
 <img src="../assets/logos/b_cuadrado_celeste.png" width="80px" alt="Logo el b bUCR celeste"/>

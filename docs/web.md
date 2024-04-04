@@ -1,4 +1,4 @@
-# Especificación del diseño para páginas web
+# Diseño para páginas web
 
 !!! warning "Sección en construcción"
     Pronto tendremos más actualizaciones.

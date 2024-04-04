@@ -1,10 +1,12 @@
 # Sobre esta propuesta
 
-## Autores
+## Autoría
 
 **Fabián Abarca Calderón** (Ingeniería Eléctrica) <br> Dirección general, textos y diseño
 
 **Jose Sánchez Porras** (Diseño Gráfico) <br> Diseño y diagramación
+
+<img src="../assets/png/tropicalizacion_negro.png" width="300px" alt="TCU Tropicalización de la tecnología"/>
 
 ## Sistema de información
 

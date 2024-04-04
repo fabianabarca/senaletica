@@ -13,9 +13,6 @@ La referencia GTFS para este sistema está disponible en [Google Spreadsheets](h
 
 En relación con los nombres e identidad visual del servicio, es necesario configurar lo siguiente.
 
-!!! note "Sobre elementos de marca en GTFS"
-    Estas son las únicas consideraciones de diseño de la marca dentro de GTFS. El nombre corto y los colores serán desplegados por aplicaciones como Google Maps y Moovit al mostrar los resultados en sus búsquedas y mapas.
-
 ## Nombre de rutas
 
 Los nombres elegidos para las dos rutas en el servicio son:
@@ -31,3 +28,6 @@ En GTFS aplica la siguiente especificación de colores para las rutas:
 | ---------- | --- | ------------- | ------------------ |
 | bUCR_L1    | ... | 008641        | FFFFFF             |
 | bUCR_L2    | ... | F37021        | FFFFFF             |
+
+!!! note "Sobre elementos de marca en GTFS"
+    Estas son las únicas consideraciones de diseño de la marca dentro de GTFS. El nombre corto y los colores serán desplegados por aplicaciones como Google Maps y Moovit al mostrar los resultados en sus búsquedas y mapas.
