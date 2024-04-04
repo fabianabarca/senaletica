@@ -5,6 +5,8 @@ Un sistema de señalética (*wayfinding*, en inglés) es...
 !!! quote "Señalética"
     Interacción entre los signos en el espacio y el comportamiento del usuario
 
+    <small>Joan Costa</small>
+
 ## Filosofía del sistema de diseño
 
 Un sistema de señalética prioriza la claridad taca taca...
