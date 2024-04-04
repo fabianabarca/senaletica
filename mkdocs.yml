@@ -2,12 +2,13 @@ site_name: Sistema de señalética del bus interno de la Universidad de Costa Ri
 
 nav:
     - Inicio: index.md
-    - Elementos: senaletica.md
+    - Elementos: elementos.md
     - Infraestructura: infraestructura.md
     - Vehículos: vehiculos.md
     - Impresiones: impresiones.md
     - Sitios web: web.md
     - GTFS: gtfs.md
+    - Sobre: sobre.md
 
 extra_css:
   - stylesheets/extra.css
@@ -17,8 +18,8 @@ theme:
   language: es
   palette:
     scheme: ucr
-  logo: assets/logos/b.png
-  favicon: assets/logos/b.png
+  logo: assets/logos/b_blanco.png
+  favicon: assets/logos/b_azul.png
   features:
     - navigation.expand
     - navigation.tabs
