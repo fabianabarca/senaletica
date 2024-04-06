@@ -2,7 +2,7 @@
 
 Para una comunicación unificada, esta propuesta utiliza varios **elementos** comunes a todo el sistema de información, que facilitan la identificación por parte de las personas usuarias.
 
-A continuación hay una descripción de los [colores y tipografía](#colores-y-tipografia), el [nombre del servicio](#nombre), el [símbolo del sistema](#simbolo-del-sistema) y los [lemas](#lemas) (eslogan) que identifican la propuesta.
+A continuación hay una descripción de los [colores y tipografía](#colores-y-tipografia), el [símbolo del sistema](#simbolo-del-sistema), los [lemas](#lemas) (eslogan) que identifican la propuesta y el [nombre del servicio](#nombre-del-servicio).
 
 ## Colores y tipografía
 
@@ -16,19 +16,6 @@ Todos los elementos están basados en la paleta de colores del [Manual de Identi
 | Amarillo UCR | #FFE06A | 255, 224, 106 | :material-circle:{ .amarillo } |
 
 La propuesta utiliza la familia tipográfica [Myriad Pro](https://es.wikipedia.org/wiki/Myriad_(tipograf%C3%ADa)), un estilo *sans serif humanista*.
-
-## Nombre del servicio
-
-Este servicio es comúnmente conocido como "el bus interno de la UCR". 
-
-Un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" seguirá siendo el nombre ordinario, proponemos un nombre especial, inspirados en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
-
-El nombre propuesto para el sistema es la combinación de las palabras **bus** y **UCR** en el [*port-manteau*](https://es.wikipedia.org/wiki/Acr%C3%B3nimo) *b***UCR**, estilizado como:
-
-<img src="../assets/logos/bucr_celeste.png" width="125px" alt="bUCR"/>
-
-!!! info "Dónde utilizar este nombre"
-    El nombre *b***UCR** puede ser utilizado en redes sociales, sitio web y otros medios, pero no es recomendado en la señalización, donde debe existir un lenguaje más neutral, ajeno a nombres arbitrarios y desconocidos para una parte de la población.
 
 ## Símbolo del sistema
 
@@ -70,6 +57,10 @@ Con base en estas y otras referencias, proponemos un símbolo para el servicio d
 <img src="../assets/logos/b_azul_fondo_blanco.png" width="300px" alt="Logo el b bUCR"/>
 
 Consiste en un círculo que engloba la letra ***b***, como referencia a la palabra *bus*. Tiene las siguientes características:
+
+[:material-download: Descargar símbolo SVG](./assets/svg/b_azul.svg)
+
+#### Características
 
 - Utiliza la tipografía Myriad Pro, específicamente la letra ***b*** en negrita itálica.
 - Utiliza el color Azul UCR, pero existen versiones en otros colores.
@@ -116,3 +107,16 @@ Con esta frase buscamos posicionar a **el b** como el símbolo del servicio de b
 Con esta frase buscamos fomentar una asociación de la Universidad de Costa Rica con el transporte público. La UCR participa activamente con investigación, docencia y acción social en la promoción del transporte público como *motor* de desarrollo socioeconómico en el país.
 
 Posiblemente también es una referencia cómica a la frase "con *v* de vaca o con *b* de burro", utilizada para desambiguación de la *v* y la *b* al escribir. Ahora es: *con b de bus*.
+
+## Nombre del servicio
+
+Este servicio es comúnmente conocido como "el bus interno de la UCR". 
+
+Un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" seguirá siendo el nombre ordinario, proponemos un nombre especial, inspirados en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
+
+El nombre propuesto para el sistema es la combinación de las palabras **bus** y **UCR** en el [*port-manteau*](https://es.wikipedia.org/wiki/Acr%C3%B3nimo) *b***UCR**, estilizado como:
+
+<img src="../assets/logos/bucr_celeste.png" width="125px" alt="bUCR"/>
+
+!!! info "Dónde utilizar este nombre"
+    El nombre *b***UCR** puede ser utilizado en redes sociales, sitio web y otros medios, pero no es recomendado en la señalización, donde debe existir un lenguaje más neutral, ajeno a nombres arbitrarios y desconocidos para una parte de la población.
