@@ -76,14 +76,9 @@ Consiste en un círculo que engloba la letra ***b***, como referencia a la palab
 <img src="../assets/logos/b_cuadrado_celeste.png" width="80px" alt="Logo el b bUCR celeste"/>
 <img src="../assets/logos/b_cuadrado_negro.png" width="80px" alt="Logo el b bUCR negro"/>
 
-- Puede ser combinado con el nombre *b***UCR**.
-
-<img src="../assets/logos/bucr_azul_celeste.png" width="180px" alt="Logo bUCR"/>
-
 - Tiene las siguientes proporciones y área de respeto.
 
 <img src="../assets/logos/b_grilla.png" width="250px" alt="Grilla del logo bUCR"/>
-
 
 !!! note "Compatibilidad con otros elementos gráficos de la UCR"
     No utiliza la base de los logotipos de la unidades académicas u otras instancias de la UCR, pues su utilización es de naturaleza distinta. Sin embargo, mantiene conformidad con el manual de identidad visual en cuanto a colores y tipografía, respeta normas de señalización vial y sigue referencias de buenas prácticas de sistemas de transporte público alrededor del mundo. 
@@ -117,6 +112,8 @@ Un nombre especial es una forma de crear un vínculo con las personas usuarias. 
 El nombre propuesto para el sistema es la combinación de las palabras **bus** y **UCR** en el [*port-manteau*](https://es.wikipedia.org/wiki/Acr%C3%B3nimo) *b***UCR**, estilizado como:
 
 <img src="../assets/logos/bucr_celeste.png" width="125px" alt="bUCR"/>
+
+y pronunciado: *bu-ce-erre*.
 
 !!! info "Dónde utilizar este nombre"
     El nombre *b***UCR** puede ser utilizado en redes sociales, sitio web y otros medios, pero no es recomendado en la señalización, donde debe existir un lenguaje más neutral, ajeno a nombres arbitrarios y desconocidos para una parte de la población.
