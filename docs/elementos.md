@@ -56,13 +56,13 @@ Con base en estas y otras referencias, proponemos un símbolo para el servicio d
   
 <img src="../assets/logos/b_azul_fondo_blanco.png" width="300px" alt="Logo el b bUCR"/>
 
-Consiste en un círculo que engloba la letra ***b***, como referencia a la palabra *bus*. Tiene las siguientes características:
+Consiste en un círculo que engloba la letra ***b***, como referencia a la palabra *bus*.
 
 [:material-download: Descargar símbolo SVG](./assets/svg/b_azul.svg)
 
 #### Características
 
-- Utiliza la tipografía Myriad Pro, específicamente la letra ***b*** en negrita itálica.
+- Utiliza la tipografía Myriad Pro, específicamente la letra ***b*** en negrita (**bold**) cursiva (*italic*).
 - Utiliza el color Azul UCR, pero existen versiones en otros colores.
 
 <img src="../assets/logos/b_azul.png" width="60px" alt="Logo el b bUCR azul"/>

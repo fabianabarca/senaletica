@@ -34,6 +34,6 @@ Hay más detalles de todas estas aplicaciones en esta documentación.
 Esta propuesta está regida por:
 
 - Conformidad con el [manual de identidad visual v3.1](./assets/references/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica (2015).
-- Conformidad con la norma nacional [INTE W5 2021](./assets/references/norma_INTE_W5_2021.pdf), denominada "Accesibilidad al medio físico, edificios, espacios urbanos y rurales, señalización accesible" (2021).
+- Conformidad con la norma nacional [INTE W5 2021]([./assets/references/norma_INTE_W5_2021.pdf](https://erp.inteco.org/shop/inte-w5-2021-accesibilidad-al-medio-fisico-edificios-espacios-urbanos-y-rurales-senalizacion-accesible-9695?product=9695#attr=)), denominada "Accesibilidad al medio físico, edificios, espacios urbanos y rurales, señalización accesible" (2021).
 - Conformidad con el [Manual Centroamericano de Dispositivos Uniformes para el Control del Tránsito](./assets/references/manual_centroamericano.pdf) (2015), utilizado en la Universidad de Costa Rica para otros tipos de señalización.
 - Referencias de los [estándares y guías de diseño](https://www.mbta.com/engineering/design-standards-and-guidelines) de MBTA, la agencia de transportes de Boston, y también de otras agencias del mundo.

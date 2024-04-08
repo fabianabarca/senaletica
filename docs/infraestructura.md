@@ -6,8 +6,8 @@ Según el [informe de la encuesta de satisfacción](https://kerwa.ucr.ac.cr/hand
 
 Cada parada tiene dos elementos: 
 
-- El símbolo ***b***, como un rótulo circular.
-- El nombre de la parada, cuyo diseño varía según el tipo.
+- **El símbolo *b***, como un rótulo circular.
+- **El nombre de la parada**, cuyo diseño varía según el tipo.
 
 Actualmente hay dos tipos de paradas en el servicio:
 
@@ -45,6 +45,8 @@ Está localizado en un poste en la acera. Tiene el símbolo ***b*** y el nombre 
 ### Especificaciones
 
 - El texto es centrado verticalmente y horizontalmente.
+- La tipografía es Myriad Pro negrita (**bold**).
+- Tamaño de texto de alrededor de 300 pt (10 cm).
 - El símbolo ***b*** tiene **45 cm de diámetro**. 
 - El radio de curvatura es, respectivamente: 5 cm en el marco, y del borde blanco 4 cm en el exterior y 2,5 cm en el interior.
 - Entre el símbolo y el rótulo hay **5 cm de separación vertical** en el poste.
@@ -65,7 +67,7 @@ Está localizado en un poste en la acera. Tiene el símbolo ***b*** y el nombre 
     
     <img src="../assets/png/rotulo_vertical_simple_grilla.png" width="300px" alt="Rótulo vertical parada Educación"/>
 
-    Tamaño de texto recomendado menor a 550 pt, equivalente a unos 19,4 cm de alto –utilizable solamente en acrónimos cortos– y mayor a 200 pt (7 cm).
+    Tamaño de texto recomendado máximo de 550 pt, equivalente a unos 19,4 cm de alto (utilizable solamente en acrónimos cortos) y mínimo de 200 pt (7 cm).
 
     [:material-download: Descargar plantilla en SVG](./assets/svg/rotulo_vertical_simple_grilla.svg)
 
@@ -77,12 +79,17 @@ Este rótulo es para paradas con infraestructura y está localizado en la parte 
 
 <img src="../assets/png/parada_horizontal.png" width="600px" alt="Rótulo horizontal parada Facultad de Microbiología"/>
 
+<img src="../assets/png/parada_horizontal_salud.png" width="600px" alt="Rótulo horizontal parada Biblioteca Ciencias de la Salud"/>
+
+<img src="../assets/png/parada_horizontal_sociales.png" width="600px" alt="Rótulo horizontal parada Facultad de Ciencias Sociales"/>
+
 ### Especificaciones
 
-- El símbolo ***b*** es idéntico al de los nombres en el poste. 
+- El símbolo ***b*** es idéntico al de los nombres en el poste (45 cm de diámetro). 
+- La tipografía es Myriad Pro negrita (**bold**).
 - Hay una sola línea de texto.
-- El texto está centrado en el área de texto.
-- El texto oscila alrededor de los 400 pt (14 cm).
+- El texto está visualmente centrado horizontalmente y verticalmente en el área de texto.
+- El tamaño del texto oscila alrededor de los 400 pt (14 cm).
 
 <img src="../assets/png/rotulo_horizontal_grilla.png" width="700px" alt="Rótulo horizontal parada Facultad de Microbiología"/>
 
@@ -92,17 +99,41 @@ Este rótulo es para paradas con infraestructura y está localizado en la parte 
 
 Utilizando uno de los lemas presentados en la sección de [Elementos](./elementos.md) es posible crear un rótulo de *promoción* del servicio.
 
-<img src="../assets/png/rotulo_el_b_es_el_bus.png" width="400px" alt="Rótulo el b es el bus de la U"/>
+<div class="grid cards" markdown>
 
-Este rótulo puede ser adicionado a otros rótulos para informar, sobre todo en la primera fase de implementación, sobre qué trata la nueva señalización.
+-   **Rótulo con lema** 
+    
+    <img src="../assets/png/rotulo_el_b_es_el_bus.png" width="400px" alt="Rótulo el b es el bus de la U"/>
 
-<img src="../assets/png/rotulo_vertical_el_b_es_el_bus.png" width="300px" alt="Rótulo vertical con lema el b es el bus de la U"/>
+-   **Rótulo con ícono de bus** 
+    
+    <img src="../assets/png/rotulo_bus_circular.png" width="150px" alt="Rótulo ícono de bus"/>
+
+</div>
+
+Estos rótulo pueden ser adicionados a otros rótulos informativos, sobre todo en la primera fase de implementación, para explicar de qué trata la nueva señalización.
+
+<div class="grid cards" markdown>
+
+-   **Rótulo vertical con lema** 
+    
+    <img src="../assets/png/rotulo_vertical_el_b_es_el_bus.png" width="300px" alt="Rótulo vertical con lema el b es el bus de la U"/>
+
+-   **Rótulo vertical con ícono de bus** 
+    
+    <img src="../assets/png/rotulo_vertical_bus_circular.png" width="300px" alt="Rótulo vertical con ícono de bus"/>
+
+</div>
 
 ### Especificaciones
 
 <img src="../assets/png/rotulo_el_b_es_el_bus_grilla.png" width="500px" alt="Grilla del rótulo el b es el bus de la U"/>
 
 [:material-download: Descargar plantilla en SVG](./assets/svg/rotulo_el_b_es_el_bus_grilla.svg)
+
+<img src="../assets/png/rotulo_bus_grilla.png" width="250px" alt="Grilla del rótulo con ícono de bus"/>
+
+[:material-download: Descargar plantilla en SVG](./assets/svg/rotulo_bus_grilla.svg)
 
 ## Trabajo futuro
 

@@ -8,6 +8,8 @@
 
 <img src="../assets/png/tropicalizacion_negro.png" width="300px" alt="TCU Tropicalización de la tecnología"/>
 
+[:material-email: tropicalizacion@ucr.ac.cr](mailto:tropicalizacion@ucr.ac.cr)
+
 ## Sistema de información
 
 La propuesta del sistema de señalética es una parte de la implementación del sistema de información del servicio de bus interno de la Universidad de Costa Rica, en desarrollo por:
