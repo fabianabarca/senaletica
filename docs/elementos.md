@@ -15,11 +15,11 @@ Todos los elementos están basados en la paleta de colores del [Manual de Identi
 | Verde UCR    | #6DC067 | 109, 192, 103 | :material-circle:{ .verde }    |
 | Amarillo UCR | #FFE06A | 255, 224, 106 | :material-circle:{ .amarillo } |
 
-La propuesta utiliza la familia tipográfica [Myriad Pro](https://es.wikipedia.org/wiki/Myriad_(tipograf%C3%ADa)), un estilo *sans serif humanista*.
+La propuesta utiliza la familia tipográfica [Myriad Pro](https://es.wikipedia.org/wiki/Myriad_(tipograf%C3%ADa)), un estilo *sans serif* (palo seco) humanista.
 
 ## Símbolo del sistema
 
-La mayoría de sistemas de transporte público alrededor del mundo utiliza un símbolo para identificar el servicio en toda su comunicación y en sus vehículos, infraestructura y demás.
+La mayoría de sistemas de transporte público alrededor del mundo utilizan un símbolo para identificar el servicio en toda su comunicación y en sus vehículos, infraestructura y demás.
 
 Existen cientos de ejemplos pero aquí presentamos cuatro como referencia.
 
@@ -47,12 +47,12 @@ Existen cientos de ejemplos pero aquí presentamos cuatro como referencia.
 
     <img src="../assets/logos/porto.svg" width="100px" />
 
-    Diseño moderno con una *m* modificada dentro de un círculo.
+    Diseño moderno con una *m* estilizada dentro de un círculo.
 </div>
 
-Con base en estas y otras referencias, proponemos un símbolo para el servicio del bus interno de la Universidad de Costa Rica. 
+Con base en estas y otras referencias, proponemos un símbolo para el servicio de buses de la Universidad de Costa Rica. 
 
-### El símbolo para *el bus* es *el b*
+### El símbolo para *el bus* de la U es ***el b***
   
 <img src="../assets/logos/b_azul_fondo_blanco.png" width="300px" alt="Logo el b bUCR"/>
 
@@ -93,21 +93,21 @@ Proponemos dos lemas.
 
 <img src="../assets/logos/el_b_es_el_bus_negro.png" width="400px" alt="El b es el bus de la U"/>
 
-Con esta frase buscamos posicionar a **el b** como el símbolo del servicio de bus interno. Su referencia es clara y directa: "(ahora) **el** (símbolo) ***b* es** (la representación del servicio de) **el bus de la U**". Hace también un guiño a la simetría de "el b" y "la U".
+Con esta frase buscamos posicionar a ***el b*** como el símbolo del servicio de bus interno. Su referencia es clara y directa: "**el** (símbolo) ***b* es** (la representación del servicio de) **el bus de la U**". Hace también un guiño a la simetría de "el b" con "la U".
 
 ---
 
 <img src="../assets/logos/ucr_con_b_negro.png" width="400px" alt="UCR con b de bus"/>
 
-Con esta frase buscamos fomentar una asociación de la Universidad de Costa Rica con el transporte público. La UCR participa activamente con investigación, docencia y acción social en la promoción del transporte público como *motor* de desarrollo socioeconómico en el país.
+Con esta frase buscamos fomentar una asociación de la Universidad de Costa Rica con el transporte público. La UCR participa activamente por medio de la investigación, docencia y acción social en la promoción del transporte público como *motor* de desarrollo socioeconómico en el país.
 
 Posiblemente también es una referencia cómica a la frase "con *v* de vaca o con *b* de burro", utilizada para desambiguación de la *v* y la *b* al escribir. Ahora es: *con b de bus*.
 
 ## Nombre del servicio
 
-Este servicio es comúnmente conocido como "el bus interno de la UCR". 
+Estos servicios son comúnmente conocidos como "el bus interno de la UCR" o "los buses externos". 
 
-Un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" seguirá siendo el nombre ordinario, proponemos un nombre especial, inspirados en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
+Un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" o "bus externo" seguirán siendo los nombres ordinarios, proponemos un nombre especial. Esto es inspirado en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
 
 El nombre propuesto para el sistema es la combinación de las palabras **bus** y **UCR** en el [*port-manteau*](https://es.wikipedia.org/wiki/Acr%C3%B3nimo) *b***UCR**, estilizado como:
 

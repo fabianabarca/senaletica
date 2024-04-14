@@ -2,9 +2,9 @@
 
 Esta propuesta diseña una señalización para indicar **el nombre de la parada de bus**, un elemento esencial para utilizar el servicio. 
 
-Según el [informe de la encuesta de satisfacción](https://kerwa.ucr.ac.cr/handle/10669/91076) de las personas usuarias del servicio y la evaluación con la norma [INTE W15:2007](https://erp.inteco.org/shop/inte-w15-2007-requisitos-tecnicos-para-la-construccion-de-las-paradas-de-los-vehiculos-de-transporte-publico-colectivo-1087#attr=), la falta de información en las paradas es una carencia importante.
+La falta de información en las paradas es una carencia importante, según la opinión dada en el [informe de la encuesta de satisfacción](https://kerwa.ucr.ac.cr/handle/10669/91076) de las personas usuarias del servicio de bus interno y según nuestra propia evaluación con la norma [INTE W15:2007](https://erp.inteco.org/shop/inte-w15-2007-requisitos-tecnicos-para-la-construccion-de-las-paradas-de-los-vehiculos-de-transporte-publico-colectivo-1087#attr=).
 
-Cada parada tiene dos elementos: 
+La rotulación de cada parada tiene dos elementos: 
 
 - **El símbolo *b***, como un rótulo circular.
 - **El nombre de la parada**, cuyo diseño varía según el tipo.
@@ -12,12 +12,12 @@ Cada parada tiene dos elementos:
 Actualmente hay dos tipos de paradas en el servicio:
 
 - **Con infraestructura**: un parabús con techo, iluminación, asientos y demás.
-- **Sin infraestructura**: solamente un poste con la indicación de parada en la acera.
+- **Sin infraestructura**: solamente un poste en la acera con la indicación de parada.
 
 Hacemos aquí la propuesta para dos tipos de rótulos:
 
-- **Tipo cartel**: específicamente para paradas con infraestructura.
-- **Tipo señal vial**: para todas las paradas, con o sin infraestructura.
+- **Tipo cartel horizontal**: específicamente para paradas con infraestructura.
+- **Tipo señal vial vertical**: para todas las paradas, con o sin infraestructura.
 
 !!! tip "Redundancia en la señalización"
     Los nombres de las paradas son información **relevante** para el servicio y las personas usuarias, y por tanto puede o debe ser redundante. Por ejemplo, esta propuesta sugiere ambos tipos de rótulos instalados en las paradas donde sea posible. 
@@ -95,7 +95,7 @@ Este rótulo es para paradas con infraestructura y está localizado en la parte 
 
 [:material-download: Descargar plantilla en SVG](./assets/svg/rotulo_horizontal_grilla.svg)
 
-## Rótulo promocional
+## Rótulo promocional (opcional)
 
 Utilizando uno de los lemas presentados en la sección de [Elementos](./elementos.md) es posible crear un rótulo de *promoción* del servicio.
 
