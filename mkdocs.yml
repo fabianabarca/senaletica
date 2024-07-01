@@ -7,6 +7,8 @@ nav:
     - Vehículos: vehiculos.md
     - Impresiones: impresiones.md
     - Sitios web: web.md
+    - Databús: databus.md
+    - Infobús: infobus.md
     - GTFS: gtfs.md
     - Sobre: sobre.md
 
@@ -36,6 +38,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 repo_url: https://github.com/fabianabarca/senaletica
 repo_name: fabianabarca/senaletica
