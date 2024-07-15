@@ -1,6 +1,6 @@
 # Señalética de los buses de la Universidad de Costa Rica
 
-Un sistema de **señalética** o señalización (*wayfinding*, en inglés) es definido de varias formas.
+Un sistema de **señalética**, señalización o rotulación (*wayfinding*, en inglés) es definido de varias formas.
 
 !!! quote "Señalética"
     Conjunto de señales para informar de algo.
@@ -15,7 +15,7 @@ Un sistema de **señalética** o señalización (*wayfinding*, en inglés) es de
     <br>
     <small>Oxford Dictionary</small>
 
-En nuestro contexto, consiste en un sistema visual asociado a los buses de la Universidad de Costa Rica para ayudar a las personas usuarias a identificar y utilizar el servicio.
+En nuestro contexto, consiste en un *sistema visual* asociado a los buses de la Universidad de Costa Rica para ayudar a las personas usuarias a identificar y utilizar el servicio.
 
 !!! info "¿Qué es el servicio de buses de la Universidad de Costa Rica?"
     La UCR ofrece un servicio de **bus interno** diario y de alta frecuencia que recorre las tres "fincas" de su campus universitario Rodrigo Facio en San Pedro de Montes de Oca en San José. Asimismo, existe un servicio de **buses externos** con cerca de 15 rutas que conectan el campus con ciudades dentro de la Gran Área Metropolitana y alrededores, como Alajuela, Heredia, Cartago y otros.

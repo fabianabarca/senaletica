@@ -4,11 +4,11 @@ nav:
     - Inicio: index.md
     - Elementos: elementos.md
     - Infraestructura: infraestructura.md
+    - Databús: databus.md
+    - Infobús: infobus.md
     - Vehículos: vehiculos.md
     - Impresiones: impresiones.md
     - Sitios web: web.md
-    - Databús: databus.md
-    - Infobús: infobus.md
     - GTFS: gtfs.md
     - Sobre: sobre.md
 

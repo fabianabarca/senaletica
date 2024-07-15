@@ -1,19 +1,20 @@
 # Elementos del sistema de señalética
 
-Para una comunicación unificada, esta propuesta utiliza varios **elementos** comunes a todo el sistema de información, que facilitan la identificación por parte de las personas usuarias.
+Para una comunicación unificada, esta propuesta utiliza varios **elementos comunes** a todo el sistema de información, que facilitan la identificación por parte de las personas usuarias.
 
 A continuación hay una descripción de los [colores y tipografía](#colores-y-tipografia), el [símbolo del sistema](#simbolo-del-sistema), los [lemas](#lemas) (eslogan) que identifican la propuesta y el [nombre del servicio](#nombre-del-servicio).
 
 ## Colores y tipografía
 
-Todos los elementos están basados en la paleta de colores del [Manual de Identidad Visual](./assets/references/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica, revisión 3.1 del 2015.
+Todos los colores de los elementos están basados en la paleta de colores del [Manual de Identidad Visual](./assets/references/identidad_visual_ucr_3.1.pdf) de la Universidad de Costa Rica, revisión 3.1 del 2015.
 
-| Nombre       | HEX     | RGB           | Muestra                        |
-|--------------|---------|---------------|--------------------------------|
-| Celeste UCR  | #00C0F3 | 0, 192, 243   | :material-circle:{ .celeste }  |
-| Azul UCR     | #005DA4 | 0, 93, 164    | :material-circle:{ .azul }     |
-| Verde UCR    | #6DC067 | 109, 192, 103 | :material-circle:{ .verde }    |
-| Amarillo UCR | #FFE06A | 255, 224, 106 | :material-circle:{ .amarillo } |
+| Nombre        | HEX     | RGB           | Muestra                        |
+|---------------|---------|---------------|--------------------------------|
+| Celeste UCR   | #00C0F3 | 0, 192, 243   | :material-circle:{ .celeste }  |
+| Azul UCR      | #005DA4 | 0, 93, 164    | :material-circle:{ .azul }     |
+| Verde UCR     | #6DC067 | 109, 192, 103 | :material-circle:{ .verde }    |
+| Amarillo UCR  | #FFE06A | 255, 224, 106 | :material-circle:{ .amarillo } |
+| Naranja 3 UCR | #F37021 | 243, 112, 33  | :material-circle:{ .naranja }  |
 
 La propuesta utiliza la familia tipográfica [Myriad Pro](https://es.wikipedia.org/wiki/Myriad_(tipograf%C3%ADa)), un estilo *sans serif* (palo seco) humanista.
 
@@ -52,15 +53,15 @@ Existen cientos de ejemplos pero aquí presentamos cuatro como referencia.
 
 Con base en estas y otras referencias, proponemos un símbolo para el servicio de buses de la Universidad de Costa Rica. 
 
-### El símbolo para *el bus* de la U es ***el b***
+### El símbolo para ***el bus*** de la U es ***el b***
   
 <img src="../assets/logos/b_azul_fondo_blanco.png" width="300px" alt="Logo el b bUCR"/>
-
-Consiste en un círculo que engloba la letra ***b***, como referencia a la palabra *bus*.
 
 [:material-download: Descargar símbolo SVG](./assets/svg/b_azul.svg)
 
 #### Características
+
+Consiste en un círculo que engloba la letra ***b***, como referencia a la palabra *bus*. 
 
 - Utiliza la tipografía Myriad Pro, específicamente la letra ***b*** en negrita (**bold**) cursiva (*italic*).
 - Utiliza el color Azul UCR, pero existen versiones en otros colores.
@@ -81,7 +82,7 @@ Consiste en un círculo que engloba la letra ***b***, como referencia a la palab
 <img src="../assets/logos/b_grilla.png" width="250px" alt="Grilla del logo bUCR"/>
 
 !!! note "Compatibilidad con otros elementos gráficos de la UCR"
-    No utiliza la base de los logotipos de la unidades académicas u otras instancias de la UCR, pues su utilización es de naturaleza distinta. Sin embargo, mantiene conformidad con el manual de identidad visual en cuanto a colores y tipografía, respeta normas de señalización vial y sigue referencias de buenas prácticas de sistemas de transporte público alrededor del mundo. 
+    "El b" no utiliza la base de los logotipos de unidades académicas u otras instancias de la UCR, pues su utilización es de naturaleza distinta. Sin embargo, mantiene conformidad con el manual de identidad visual en cuanto a colores y tipografía, respeta normas de señalización vial y sigue referencias de buenas prácticas de de diseño de sistemas de transporte público alrededor del mundo. 
 
 ## Lemas
 
@@ -93,7 +94,7 @@ Proponemos dos lemas.
 
 <img src="../assets/logos/el_b_es_el_bus_negro.png" width="400px" alt="El b es el bus de la U"/>
 
-Con esta frase buscamos posicionar a ***el b*** como el símbolo del servicio de bus interno. Su referencia es clara y directa: "**el** (símbolo) ***b* es** (la representación del servicio de) **el bus de la U**". Hace también un guiño a la simetría de "el b" con "la U".
+Con esta frase buscamos posicionar a ***el b*** como el símbolo del servicio de bus interno. Su referencia es clara y directa: "**el** (símbolo) ***b* es** (la representación del servicio de) **el bus de la U**". Hace también un guiño a la simetría de "el b" con "la U" y la tendencia a acortar las palabras.
 
 ---
 
@@ -105,15 +106,15 @@ Posiblemente también es una referencia cómica a la frase "con *v* de vaca o co
 
 ## Nombre del servicio
 
-Estos servicios son comúnmente conocidos como "el bus interno de la UCR" o "los buses externos". 
+Estos servicios de transporte público son comúnmente conocidos como "el bus interno de la UCR" o "los buses externos". 
 
-Un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" o "bus externo" seguirán siendo los nombres ordinarios, proponemos un nombre especial. Esto es inspirado en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
+Asignar un nombre especial es una forma de crear un vínculo con las personas usuarias. Aunque posiblemente "bus interno" o "bus externo" seguirán siendo los nombres ordinarios, proponemos un nombre especial. Esto es inspirado en otros casos similares como el del servicio de buses internos de la UNAM en México, llamado *PumaBus*, en alusión a su mascota. 
 
 El nombre propuesto para el sistema es la combinación de las palabras **bus** y **UCR** en el [*port-manteau*](https://es.wikipedia.org/wiki/Acr%C3%B3nimo) *b***UCR**, estilizado como:
 
 <img src="../assets/logos/bucr_celeste.png" width="125px" alt="bUCR"/>
 
-y pronunciado: *bu-ce-erre*.
+y pronunciado *bus-ce-erre* o *be-u-ce-erre*.
 
 !!! info "Dónde utilizar este nombre"
     El nombre *b***UCR** puede ser utilizado en redes sociales, sitio web y otros medios, pero no es recomendado en la señalización, donde debe existir un lenguaje más neutral, ajeno a nombres arbitrarios y desconocidos para una parte de la población.

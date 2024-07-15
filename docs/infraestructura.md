@@ -2,7 +2,7 @@
 
 Esta propuesta diseña una señalización para indicar **el nombre de la parada de bus**, un elemento esencial para utilizar el servicio. 
 
-La falta de información en las paradas es una carencia importante, según la opinión dada en el [informe de la encuesta de satisfacción](https://kerwa.ucr.ac.cr/handle/10669/91076) de las personas usuarias del servicio de bus interno y según nuestra propia evaluación con la norma [INTE W15:2007](https://erp.inteco.org/shop/inte-w15-2007-requisitos-tecnicos-para-la-construccion-de-las-paradas-de-los-vehiculos-de-transporte-publico-colectivo-1087#attr=).
+La falta de información en una parada (o *parabús*) es una carencia importante, según la opinión dada en el [informe de la encuesta de satisfacción](https://kerwa.ucr.ac.cr/handle/10669/91076) de las personas usuarias del servicio de bus interno y según nuestra propia evaluación con la norma [INTE W15:2007](https://erp.inteco.org/shop/inte-w15-2007-requisitos-tecnicos-para-la-construccion-de-las-paradas-de-los-vehiculos-de-transporte-publico-colectivo-1087#attr=).
 
 La rotulación de cada parada tiene dos elementos: 
 
