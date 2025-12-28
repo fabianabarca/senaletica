@@ -189,7 +189,7 @@ Avance X: 315.20px
 
 ---
 
-## Medición con Pillow (Alternativa Rápida)
+## Medición con Pillow (Alternativa)
 
 ```python
 from PIL import ImageFont
@@ -211,16 +211,53 @@ metrics = measure_text_pillow(
 
 ## Análisis con fontTools
 
+Para análisis profundo de métricas tipográficas:
+
 ```python
 from fontTools.ttLib import TTFont
 
-font = TTFont("research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF")
-print(f"Family: {font['name'].getDebugName(1)}")
-print(f"Units per EM: {font['head'].unitsPerEm}")
-print(f"Glyphs: {len(font.getGlyphSet())}")
+def analyze_font(font_path):
+    """
+    Extrae métricas completas de una fuente TrueType/OpenType.
+    """
+    font = TTFont(font_path)
+    
+    # Métricas globales
+    units_per_em = font['head'].unitsPerEm
+    ascent = font['hhea'].ascent
+    descent = font['hhea'].descent
+    line_gap = font['hhea'].lineGap
+    
+    # Información de nombres
+    name_records = font['name']
+    font_family = name_records.getDebugName(1)
+    font_subfamily = name_records.getDebugName(2)
+    
+    return {
+        'family': font_family,
+        'subfamily': font_subfamily,
+        'units_per_em': units_per_em,
+        'ascent': ascent,
+        'descent': descent,
+        'line_gap': line_gap,
+        'line_height': ascent - descent + line_gap
+    }
+
+# Ejemplo con Myriad Pro
+font_info = analyze_font("research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF")
+
+print(f"Fuente: {font_info['family']} {font_info['subfamily']}")
+print(f"Units per EM: {font_info['units_per_em']}")
+print(f"Ascent: {font_info['ascent']}")
+print(f"Descent: {font_info['descent']}")
+print(f"Line height: {font_info['line_height']}")
 ```
 
-**Uso:** Validación de fuente, extracción de métricas, análisis de kerning pairs
+**Casos de uso:**
+- Validar que se tiene la fuente correcta
+- Calcular line-height preciso para layouts
+- Analizar kerning pairs
+- Extraer glyph paths para conversión a SVG paths
 
 ---
 
@@ -428,6 +465,8 @@ Letter-spacing: +21.43px
 1. Renderizar cada letra individualmente con offsets calculados
 2. Usar Pango con `letter-spacing` attribute
 3. Convertir a SVG y aplicar `letter-spacing` CSS
+
+---
 
 ---
 
