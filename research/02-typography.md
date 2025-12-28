@@ -42,143 +42,51 @@ Según la documentación de bUCR, normas INTECO y el Manual de Identidad Visual 
 
 ### Tipografías Oficiales (Manual de Identidad Visual UCR)
 
-El sistema de identidad visual de la Universidad de Costa Rica contempla cuatro familias tipográficas:
+El sistema de identidad visual de la Universidad de Costa Rica contempla cuatro familias tipográficas, Myriad Pro es la oficial para rótulos:
 
-#### 1. Myriad Pro (OFICIAL PARA RÓTULOS)
-
-**Especificación:**
-- Tipografía humanista sans-serif
-- Diseñada por Robert Slimbach y Carol Twombly (1992)
-- Alta legibilidad, calidez y comodidad visual
-- **Uso en rótulos: Myriad Pro Bold sobre fondo azul**
-
-**Aplicaciones:**
-- Títulos y encabezados
-- Textos cortos o mediana longitud
-- Comunicaciones menos formales
-- **SEÑALÉTICA Y RÓTULOS OFICIALES UCR**
-
-**Disponibilidad:**
-- Fuente comercial (Adobe Fonts)
-- Requiere licencia institucional
-- Instalada en sistemas de diseño gráfico UCR
-
-#### 2. Trueno
+#### 1. Myriad Pro (DISPONIBLE)
 
 **Especificación:**
-- Tipografía sans-serif de uso libre
-- Diseñada por Julieta Ulanovsky (2011)
-- Alta legibilidad en dispositivos electrónicos
-- Licencia abierta (Open Source)
+- Tipografía humanista sans-serif por Robert Slimbach y Carol Twombly (1992)
+- **Uso oficial UCR: Myriad Pro Bold sobre fondo azul para rótulos y señalética**
+- Alta legibilidad a distancia (2-5 metros)
 
-**Aplicaciones:**
-- Sitios web institucionales
-- Interfaces digitales
-- **Alternativa open source para prototipos**
+**Disponibilidad en proyecto:**
+- **Ubicación:** `research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF`
+- Formato: OpenType (.otf)
+- Tamaño: 94KB
+- Familia completa disponible (Bold, Regular, Condensed, Light, SemiBold)
 
-**Disponibilidad:**
-- Libre descarga
-- Compatible con Myriad Pro visualmente
+### Alternativa de Desarrollo
 
-#### 3. EB Garamond
+**DejaVu Sans Bold** (preinstalada en Ubuntu) se usa como fallback durante desarrollo cuando no se requiere output final:
 
-**Especificación:**
-- Tipografía serif clásica
-- Para documentos formales
-
-**Aplicaciones:**
-- Documentos académicos
-- Publicaciones oficiales
-
-#### 4. Times New Roman
-
-**Especificación:**
-- Tipografía serif estándar
-- Fallback para documentos
-
-**Aplicaciones:**
-- Correspondencia formal
-- Cuando Garamond no está disponible
-
-### Alternativas Open Source para Prototipo
-
-Si no se tiene acceso a Myriad Pro:
-
-| Fuente | Tipo | Similitud | Licencia | Uso |
-|--------|------|-----------|----------|-----|
-| **Trueno** | Sans-serif | Alta | Open Source | Oficial UCR web |
-| **DejaVu Sans** | Sans-serif | Media-Alta | Free | Preinstalada en Ubuntu |
-| **Open Sans** | Sans-serif | Media-Alta | Apache 2.0 | Prototipado |
-| **Liberation Sans** | Sans-serif | Media | GPL/Liberation | Métricamente compatible con Helvetica |
-| **Roboto** | Sans-serif | Media | Apache 2.0 | Similar a Helvetica |
-
-**Recomendación para MVP:** Usar **DejaVu Sans Bold** (preinstalada en Ubuntu) o **Trueno** (oficial UCR web) mientras se obtiene acceso a Myriad Pro.
-
----
+- Ruta: `/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf`
+- Métricamente similar a Helvetica/Arial
+- Útil para testing rápido y validación de layouts
 
 ---
 
 ## Especificaciones Oficiales de Rótulos UCR
 
-Según el Manual de Identidad Visual UCR (sección de rótulos y señales):
+### Normativa de Diseño (Manual de Identidad Visual UCR)
 
-### Objetivo del Sistema
+**Tipografía y Color:**
+- **Myriad Pro Bold** sobre fondo azul (C100 M75 Y0 K40)
+- Texto blanco, tamaños 56-110mm
+- Cumplimiento Ley 7600 (accesibilidad)
 
-Facilitar la ubicación de lugares a personas que transitan a pie o en vehículo, manteniendo coherencia con la identidad visual UCR.
-
-### Normativa de Diseño
-
-**Tipografía:**
-- Tipo de letra: **Myriad Pro Bold**
-- Color de texto: Blanco
-- Fondo: Azul UCR
-
-**Colores para Impresión:**
-- Cyan: 100%
-- Magenta: 75%
-- Amarillo: 0%
-- Negro: 40%
-
-**Accesibilidad (Ley 7600):**
-- Tamaños apropiados para lectura a distancia
-- Colores contrastantes
-- Técnicas de accesibilidad universal
-
-### Clasificación de Rótulos UCR
-
-1. **Rótulos frente a sede** - En carreteras
-2. **Rótulos de ubicación en campus** - Navegación general
-3. **Rótulos de ubicación en edificios** - Navegación interna
-4. **Rótulos de señalamiento vial** - Según reglamento nacional
-5. **Rótulos de emergencia** - Estándares internacionales
-
-**Gestión:** Cualquier rótulo debe coordinarse con la Oficina de Divulgación e Información (ODI) para asegurar coherencia de diseño.
-
-### Elementos Gráficos
-
-- **Parte delantera:** Debe incluir firma UCR correspondiente
-- **Logotipos adicionales:** No permitidos
+**Gestión:**
+- Coordinación obligatoria con ODI
+- Firma UCR en parte delantera
+- No logotipos adicionales
 
 ---
 
 ## Formatos de Fuentes
 
-### TrueType (.ttf)
-- Más compatible
-- Bien soportado en Python
-- Fácil de embedir
-- **Formato esperado para Myriad Pro**
-
-### OpenType (.otf)
-- Características tipográficas avanzadas
-- Soportado por bibliotecas modernas
-- Algunas features pueden no renderizarse en todas las bibliotecas
-- **Formato alternativo para fuentes UCR**
-
-### Web Fonts (.woff, .woff2)
-- Para uso en SVG web
-- No directamente usables en Python sin conversión
-- **Trueno disponible en este formato**
+**Myriad Pro:** OpenType (.otf) - Soportado por pycairo/Pango  
+**DejaVu Sans:** TrueType (.ttf) - Usado como fallback de desarrollo
 
 ---
 
@@ -188,34 +96,25 @@ Basado en las conclusiones de [01-python-libraries.md](./01-python-libraries.md)
 
 ### 1. Carga de Fuentes del Sistema
 
-### 1. Carga de Fuentes del Sistema
-
 ```python
 import cairo
 
 surface = cairo.SVGSurface('test.svg', 700, 300)
 ctx = cairo.Context(surface)
 
-# Opción 1: Fuente del sistema por nombre
+# Myriad Pro (si está instalada en sistema)
 ctx.select_font_face("Myriad Pro", 
                      cairo.FONT_SLANT_NORMAL, 
                      cairo.FONT_WEIGHT_BOLD)
 ctx.set_font_size(48)
 
-# Opción 2: Alternativa con DejaVu Sans (preinstalada en Ubuntu)
+# Alternativa: DejaVu Sans para desarrollo
 ctx.select_font_face("DejaVu Sans", 
                      cairo.FONT_SLANT_NORMAL, 
                      cairo.FONT_WEIGHT_BOLD)
 ```
 
-**Características:**
-- Depende de fontconfig del sistema
-- Fuentes deben estar instaladas en `/usr/share/fonts/` o `~/.fonts/`
-- Fallback automático a fuentes similares
-
-### 2. Carga de Fuentes Personalizadas con cairo_ft
-
-Para usar archivos `.ttf` o `.otf` directamente:
+### 2. Carga Directa de Archivo .otf (Producción)
 
 ```python
 import cairo
@@ -223,27 +122,23 @@ import gi
 gi.require_version('PangoCairo', '1.0')
 from gi.repository import Pango, PangoCairo
 
-surface = cairo.SVGSurface('test_custom.svg', 700, 300)
+# Ruta a Myriad Pro Bold
+font_path = "research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF"
+
+surface = cairo.SVGSurface('rotulo.svg', 700, 300)
 ctx = cairo.Context(surface)
 
-# Configurar Pango para usar fuente custom
 layout = PangoCairo.create_layout(ctx)
-font_desc = Pango.FontDescription("Myriad Pro Bold 48")
+font_desc = Pango.FontDescription.from_string(f"Myriad Pro Bold 48")
 layout.set_font_description(font_desc)
 layout.set_text("Facultad de Ingeniería", -1)
 
-# Renderizar
 ctx.set_source_rgb(1, 1, 1)  # Blanco
 PangoCairo.show_layout(ctx, layout)
-
 surface.finish()
 ```
 
-**Características:**
-- Requiere PyGObject y Pango
-- Soporte complejo de layout (multi-línea, alineación)
-- HarfBuzz shaping engine (tipografía profesional)
-- Mejor opción para producción con fuentes custom
+**Ventajas:** Renderizado profesional, HarfBuzz shaping, layout multi-línea automático
 
 ### 3. Medición Precisa de Texto
 
@@ -274,9 +169,11 @@ def measure_text(text, font_face, font_size):
         'y_advance': extents.y_advance
     }
 
-# Ejemplo de uso
-text = "Facultad de Ingeniería"
-metrics = measure_text(text, "DejaVu Sans", 48)
+# Ejemplo con Myriad Pro (producción)
+metrics = measure_text("Facultad de Ingeniería", "Myriad Pro", 48)
+
+# Ejemplo con DejaVu Sans (desarrollo)
+metrics = measure_text("Facultad de Ingeniería", "DejaVu Sans", 48)
 
 print(f"Ancho: {metrics['width']:.2f}px")
 print(f"Alto: {metrics['height']:.2f}px")
@@ -292,55 +189,38 @@ Avance X: 315.20px
 
 ---
 
-## Manejo de Fuentes con Pillow (Alternativa para Medición)
-
-Aunque pycairo es la recomendación para producción, **Pillow** es útil para mediciones rápidas y validación de tamaños:
+## Medición con Pillow (Alternativa Rápida)
 
 ```python
-from PIL import ImageFont, ImageDraw, Image
+from PIL import ImageFont
 
 def measure_text_pillow(text, font_path, font_size):
-    """
-    Mide texto usando Pillow (preciso para TrueType).
-    """
     font = ImageFont.truetype(font_path, size=font_size)
-    
-    # Crear imagen temporal para medición
-    img = Image.new('RGB', (1, 1))
-    draw = ImageDraw.Draw(img)
-    
-    bbox = draw.textbbox((0, 0), text, font=font)
-    
-    width = bbox[2] - bbox[0]
-    height = bbox[3] - bbox[1]
-    
-    return {'width': width, 'height': height}
+    bbox = font.getbbox(text)
+    return {'width': bbox[2] - bbox[0], 'height': bbox[3] - bbox[1]}
 
-# Ejemplo de uso
+# Con Myriad Pro
 metrics = measure_text_pillow(
     "Facultad de Ingeniería",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF",
     48
 )
-
-print(f"Ancho: {metrics['width']}px, Alto: {metrics['height']}px")
 ```
-
-**Ventajas de Pillow para medición:**
-- Muy preciso con archivos TrueType
-- No requiere superficie de renderizado
-- Útil para pre-cálculo antes de usar Cairo
 
 ---
 
-## Manejo de Fuentes con fontTools (Análisis Avanzado)
-
-Para análisis profundo de métricas tipográficas:
+## Análisis con fontTools
 
 ```python
 from fontTools.ttLib import TTFont
 
-def analyze_font(font_path):
+font = TTFont("research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF")
+print(f"Family: {font['name'].getDebugName(1)}")
+print(f"Units per EM: {font['head'].unitsPerEm}")
+print(f"Glyphs: {len(font.getGlyphSet())}")
+```
+
+**Uso:** Validación de fuente, extracción de métricas, análisis de kerning pairs
     """
     Extrae métricas completas de una fuente TrueType/OpenType.
     """
@@ -408,7 +288,7 @@ Diferentes nombres de paradas tienen diferentes longitudes que deben caber en el
 ```python
 import cairo
 
-def calculate_optimal_font_size(text, max_width, font_face="DejaVu Sans", 
+def calculate_optimal_font_size(text, max_width, font_face="Myriad Pro", 
                                  min_size=56, max_size=110):
     """
     Calcula el tamaño de fuente óptimo para que el texto quepa 
@@ -417,7 +297,7 @@ def calculate_optimal_font_size(text, max_width, font_face="DejaVu Sans",
     Args:
         text: Texto a medir
         max_width: Ancho máximo disponible en pixeles
-        font_face: Nombre de la fuente
+        font_face: "Myriad Pro" (producción) o "DejaVu Sans" (desarrollo)
         min_size: Tamaño mínimo (56mm ≈ 212px @ 96dpi)
         max_size: Tamaño máximo (110mm ≈ 415px @ 96dpi)
     
@@ -476,7 +356,7 @@ Escuela de Arquitectura y Urbanismo           -> 158pt (ajustado)
 ```python
 import cairo
 
-def split_text_multiline(text, max_width, font_face="DejaVu Sans", 
+def split_text_multiline(text, max_width, font_face="Myriad Pro", 
                          font_size=200):
     """
     Divide texto en múltiples líneas si es muy largo,
@@ -485,7 +365,7 @@ def split_text_multiline(text, max_width, font_face="DejaVu Sans",
     Args:
         text: Texto a dividir
         max_width: Ancho máximo por línea
-        font_face: Nombre de la fuente
+        font_face: "Myriad Pro" (producción) o "DejaVu Sans" (desarrollo)
         font_size: Tamaño de fuente en puntos
     
     Returns:
@@ -655,12 +535,12 @@ def embed_font_in_svg(font_path, svg_path, text):
     print(f"SVG con fuente embedida: {svg_path}")
     print(f"Tamaño de fuente base64: {len(base64_font)} chars")
 
-# Ejemplo de uso (descomentar si se tiene la fuente)
-# embed_font_in_svg(
-#     '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
-#     'text_embedded.svg',
-#     'Facultad de Ingeniería'
-# )
+# Ejemplo con Myriad Pro (listo para usar)
+embed_font_in_svg(
+    'research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF',
+    'rotulo_fing.svg',
+    'Facultad de Ingeniería'
+)
 ```
 
 **Ventajas:**
@@ -760,13 +640,13 @@ def create_svg_with_paths(font_path, text, svg_path, font_size=48):
     print(f"SVG con paths: {svg_path}")
     print(f"Total width: {total_width}px")
 
-# Ejemplo de uso (descomentar si se tiene la fuente)
-# create_svg_with_paths(
-#     '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
-#     'FING',
-#     'text_paths.svg',
-#     font_size=72
-# )
+# Ejemplo con Myriad Pro (producción)
+create_svg_with_paths(
+    'research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF',
+    'FING',
+    'rotulo_fing_paths.svg',
+    font_size=72
+)
 ```
 
 **Ventajas:**
@@ -808,95 +688,7 @@ def create_svg_with_paths(font_path, text, svg_path, font_size=48):
 
 ### Ejemplo 1: Medición y Ajuste con pycairo
 
-Crear: [examples/typography_cairo_measure.py](./examples/typography_cairo_measure.py)
-
-```python
-#!/usr/bin/env python3
-"""
-Ejemplo de medición y ajuste de texto con pycairo.
-Genera SVG con tres tamaños diferentes según longitud de texto.
-"""
-import cairo
-
-def measure_and_fit_text(text, max_width=600, font_face="Liberation Sans"):
-    """
-    Mide texto y ajusta tamaño de fuente para que quepa en max_width.
-    """
-    surface = cairo.SVGSurface(None, 0, 0)
-    ctx = cairo.Context(surface)
-    
-    # Probar tamaños de fuente de 200pt a 100pt
-    for font_size in range(200, 99, -10):
-        ctx.select_font_face(font_face, 
-                             cairo.FONT_SLANT_NORMAL, 
-                             cairo.FONT_WEIGHT_BOLD)
-        ctx.set_font_size(font_size)
-        
-        extents = ctx.text_extents(text)
-        
-        if extents.width <= max_width:
-            return font_size, extents.width, extents.height
-    
-    return 100, extents.width, extents.height
-
-def create_test_svg():
-    """
-    Crea SVG con tres ejemplos de texto ajustado.
-    """
-    texts = [
-        "FING",
-        "Facultad de Ingeniería",
-        "Escuela de Arquitectura y Urbanismo"
-    ]
-    
-    max_width = 600
-    height = 400
-    
-    surface = cairo.SVGSurface('typography_cairo_measure.svg', 700, height)
-    ctx = cairo.Context(surface)
-    
-    # Fondo blanco
-    ctx.set_source_rgb(1, 1, 1)
-    ctx.paint()
-    
-    # Renderizar cada texto
-    y_offset = 100
-    
-    for text in texts:
-        font_size, width, height_text = measure_and_fit_text(text, max_width)
-        
-        # Dibujar fondo azul UCR
-        ctx.set_source_rgb(0, 93/255, 164/255)  # #005DA4
-        ctx.rectangle(50, y_offset - height_text - 10, max_width, height_text + 20)
-        ctx.fill()
-        
-        # Dibujar texto blanco
-        ctx.set_source_rgb(1, 1, 1)
-        ctx.select_font_face("Liberation Sans", 
-                             cairo.FONT_SLANT_NORMAL, 
-                             cairo.FONT_WEIGHT_BOLD)
-        ctx.set_font_size(font_size)
-        
-        ctx.move_to(50 + (max_width - width) / 2, y_offset)
-        ctx.show_text(text)
-        
-        # Info de debug
-        ctx.set_source_rgb(0, 0, 0)
-        ctx.select_font_face("Liberation Sans", 
-                             cairo.FONT_SLANT_NORMAL, 
-                             cairo.FONT_WEIGHT_NORMAL)
-        ctx.set_font_size(12)
-        ctx.move_to(660, y_offset)
-        ctx.show_text(f"{font_size}pt")
-        
-        y_offset += 120
-    
-    surface.finish()
-    print("Generated: typography_cairo_measure.svg")
-
-if __name__ == '__main__':
-    create_test_svg()
-```
+Ver: [examples/typography_cairo_measure.py](./examples/02-typography/typography_cairo_measure.py)
 
 **Ejecutar:**
 ```bash
@@ -904,112 +696,17 @@ cd /home/brandontrigueros/Dev/TCU/bUCR/research
 python3 examples/typography_cairo_measure.py
 ```
 
-**Resultado esperado:**
+**Resultado**
 - SVG con tres rótulos de diferentes tamaños de fuente
 - "FING" en tamaño grande (~200pt)
 - "Facultad de Ingeniería" en tamaño medio (~160pt)
 - Texto largo ajustado a tamaño menor (~120pt)
 
+![typography_cairo_measure.svg](./examples/02-typography/typography_cairo_measure.svg)
+
 ### Ejemplo 2: Multi-línea Automático
 
-Crear: [examples/typography_multiline.py](./examples/typography_multiline.py)
-
-```python
-#!/usr/bin/env python3
-"""
-Ejemplo de división automática en múltiples líneas.
-"""
-import cairo
-
-def split_and_render(text, max_width=600, font_size=150):
-    """
-    Divide texto en líneas y renderiza.
-    """
-    surface = cairo.SVGSurface(None, 0, 0)
-    ctx = cairo.Context(surface)
-    
-    ctx.select_font_face("Liberation Sans", 
-                         cairo.FONT_SLANT_NORMAL, 
-                         cairo.FONT_WEIGHT_BOLD)
-    ctx.set_font_size(font_size)
-    
-    words = text.split()
-    lines = []
-    current_line = []
-    
-    for word in words:
-        test_line = ' '.join(current_line + [word])
-        extents = ctx.text_extents(test_line)
-        
-        if extents.width <= max_width:
-            current_line.append(word)
-        else:
-            if current_line:
-                lines.append(' '.join(current_line))
-            current_line = [word]
-    
-    if current_line:
-        lines.append(' '.join(current_line))
-    
-    return lines
-
-def create_multiline_svg():
-    """
-    Crea SVG con texto en múltiples líneas.
-    """
-    text = "Escuela de Arquitectura y Urbanismo"
-    max_width = 600
-    font_size = 120
-    line_height = 140
-    
-    lines = split_and_render(text, max_width, font_size)
-    
-    total_height = len(lines) * line_height + 100
-    
-    surface = cairo.SVGSurface('typography_multiline.svg', 700, total_height)
-    ctx = cairo.Context(surface)
-    
-    # Fondo blanco
-    ctx.set_source_rgb(1, 1, 1)
-    ctx.paint()
-    
-    # Fondo azul para texto
-    ctx.set_source_rgb(0, 93/255, 164/255)
-    ctx.rectangle(50, 30, max_width, len(lines) * line_height + 40)
-    ctx.fill()
-    
-    # Renderizar cada línea
-    ctx.set_source_rgb(1, 1, 1)
-    ctx.select_font_face("Liberation Sans", 
-                         cairo.FONT_SLANT_NORMAL, 
-                         cairo.FONT_WEIGHT_BOLD)
-    ctx.set_font_size(font_size)
-    
-    y_offset = 120
-    for line in lines:
-        extents = ctx.text_extents(line)
-        x_pos = 50 + (max_width - extents.width) / 2
-        
-        ctx.move_to(x_pos, y_offset)
-        ctx.show_text(line)
-        
-        y_offset += line_height
-    
-    # Info
-    ctx.set_source_rgb(0, 0, 0)
-    ctx.select_font_face("Liberation Sans", 
-                         cairo.FONT_SLANT_NORMAL, 
-                         cairo.FONT_WEIGHT_NORMAL)
-    ctx.set_font_size(14)
-    ctx.move_to(50, total_height - 20)
-    ctx.show_text(f"{len(lines)} líneas × {font_size}pt")
-    
-    surface.finish()
-    print(f"Generated: typography_multiline.svg ({len(lines)} lines)")
-
-if __name__ == '__main__':
-    create_multiline_svg()
-```
+Ver: [examples/typography_multiline.py](./examples/02-typography/typography_multiline.py)
 
 **Ejecutar:**
 ```bash
@@ -1021,104 +718,11 @@ python3 examples/typography_multiline.py
 - Centrado en cada línea
 - Fondo azul UCR
 
+![typography_multiline.svg](./examples/02-typography/typography_multiline.svg)
+
 ### Ejemplo 3: Análisis de Fuente con fontTools
 
-Crear: [examples/typography_font_analysis.py](./examples/typography_font_analysis.py)
-
-```python
-#!/usr/bin/env python3
-"""
-Análisis de métricas de fuente usando fontTools.
-"""
-from fontTools.ttLib import TTFont
-import sys
-
-def analyze_font(font_path):
-    """
-    Analiza y muestra métricas de una fuente TrueType/OpenType.
-    """
-    try:
-        font = TTFont(font_path)
-    except Exception as e:
-        print(f"Error loading font: {e}")
-        return
-    
-    # Información básica
-    print("=" * 60)
-    print(f"Font Analysis: {font_path}")
-    print("=" * 60)
-    
-    # Nombres
-    name_table = font['name']
-    font_family = name_table.getDebugName(1)
-    font_subfamily = name_table.getDebugName(2)
-    full_name = name_table.getDebugName(4)
-    
-    print(f"\nFont Names:")
-    print(f"  Family: {font_family}")
-    print(f"  Subfamily: {font_subfamily}")
-    print(f"  Full Name: {full_name}")
-    
-    # Métricas globales
-    units_per_em = font['head'].unitsPerEm
-    ascent = font['hhea'].ascent
-    descent = font['hhea'].descent
-    line_gap = font['hhea'].lineGap
-    
-    print(f"\nGlobal Metrics:")
-    print(f"  Units per EM: {units_per_em}")
-    print(f"  Ascent: {ascent} ({ascent/units_per_em*100:.1f}%)")
-    print(f"  Descent: {descent} ({descent/units_per_em*100:.1f}%)")
-    print(f"  Line Gap: {line_gap}")
-    print(f"  Line Height: {ascent - descent + line_gap}")
-    
-    # Glifos
-    glyph_set = font.getGlyphSet()
-    num_glyphs = len(glyph_set.keys())
-    
-    print(f"\nGlyphs:")
-    print(f"  Total glyphs: {num_glyphs}")
-    
-    # Medir algunos caracteres comunes
-    cmap = font.getBestCmap()
-    test_chars = "ABCEFIMabcefim"
-    
-    print(f"\nSample Character Widths (at {units_per_em} units):")
-    for char in test_chars:
-        if ord(char) in cmap:
-            glyph_name = cmap[ord(char)]
-            glyph = glyph_set[glyph_name]
-            width = glyph.width
-            width_pct = width / units_per_em * 100
-            print(f"  '{char}': {width:4d} units ({width_pct:5.1f}%)")
-    
-    # Calcular ancho promedio para texto de prueba
-    test_text = "Facultad de Ingeniería"
-    total_width = 0
-    for char in test_text:
-        if ord(char) in cmap:
-            glyph_name = cmap[ord(char)]
-            total_width += glyph_set[glyph_name].width
-    
-    avg_width = total_width / len(test_text)
-    
-    print(f"\nTest Text: '{test_text}'")
-    print(f"  Total width: {total_width} units")
-    print(f"  Average width/char: {avg_width:.1f} units")
-    print(f"  At 48pt: ~{total_width * 48 / units_per_em:.0f}px")
-    print(f"  At 100pt: ~{total_width * 100 / units_per_em:.0f}px")
-    
-    print("\n" + "=" * 60)
-
-if __name__ == '__main__':
-    # Usar Liberation Sans Bold como ejemplo
-    font_path = '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
-    
-    if len(sys.argv) > 1:
-        font_path = sys.argv[1]
-    
-    analyze_font(font_path)
-```
+Ver: [examples/typography_font_analysis.py](./examples/02-typography/typography_font_analysis.py)
 
 **Ejecutar:**
 ```bash
@@ -1167,61 +771,52 @@ Test Text: 'Facultad de Ingeniería'
 ### Para Prototipo Rápido (MVP - Fase 1):
 
 **Stack:**
-1. **pycairo** para renderizado vectorial
-2. **DejaVu Sans Bold** como fuente de prueba (preinstalada en Ubuntu)
-3. **Ajuste de tamaño** con algoritmo iterativo (Solución 1)
-4. **Sistema fonts** sin embedding (distribución interna)
+- **pycairo + Pango** para renderizado vectorial profesional
+- **Myriad Pro Bold** (disponible en `research/examples/02-typography/myriad-pro/MYRIADPRO-BOLD.OTF`)
+- **DejaVu Sans Bold** como fallback para testing rápido
+- Ajuste de tamaño con algoritmo iterativo
+- Sistema fonts sin embedding (distribución interna UCR)
 
-**Justificación:**
-- Rápido de implementar (~40h)
-- Sin dependencia de fuentes UCR inmediata
-- Calidad profesional garantizada
-- Fácil migración a Myriad Pro después
+**Justificación:** Usar Myriad Pro desde el inicio asegura consistencia con identidad UCR y evita migración posterior.
 
 ### Para Producción (Fase 2-3):
 
 **Stack:**
-1. **pycairo + Pango** para layout complejo
-2. **Myriad Pro Bold** (fuente oficial UCR)
-3. **Base64 embedding** para distribución
-4. **Path conversion** para impresión profesional
-5. **Multi-línea automático** para textos largos
+- **pycairo + Pango** para layout complejo
+- **Myriad Pro Bold** (ya disponible)
+- **Base64 embedding** para distribución externa
+- **Path conversion** para impresión profesional
+- Multi-línea automático para textos largos
 
-**Pasos para migración:**
-1. Obtener Myriad Pro de ODI/Diseño Gráfico UCR
-2. Instalar fuente en sistema o usar con Pango
-3. Validar métricas contra especificaciones UCR
-4. Probar con 20 paradas reales
-5. Implementar embedding para producción
+**Validación:**
+- Probar con 20 paradas reales del sistema bUCR
+- Validar tamaños 56-110mm contra especificaciones INTECO
+- Confirmar colores de impresión (C100 M75 Y0 K40)
 
-### Sistema Híbrido Recomendado:
+### Arquitectura de Typography Module:
 
 ```python
-# Pseudocódigo de arquitectura
-rotulador/
-├── typography/
-│   ├── loader.py          # Carga fuentes (sistema o archivo)
-│   ├── metrics.py         # Medición con pycairo
-│   ├── adjuster.py        # Ajuste dinámico (3 estrategias)
-│   └── embedder.py        # Base64 o path conversion
+rotulador/typography/
+├── loader.py      # Carga Myriad Pro .otf o fallback
+├── metrics.py     # Medición con pycairo/Pango
+├── adjuster.py    # Ajuste dinámico (size/multiline/spacing)
+└── embedder.py    # Base64 o path conversion para SVG
 ```
 
-**Flujo:**
-1. **Cargar fuente:** Sistema → Myriad Pro → Trueno → DejaVu Sans (fallback)
-2. **Medir texto:** Cairo text_extents
-3. **Ajustar:** Size → Multi-line → Letter-spacing (según necesidad)
-4. **Renderizar:** pycairo a SVG
-5. **Embedir (opcional):** Base64 para distribución, paths para impresión
+**Flujo de generación:**
+```
+Cargar fuente → Medir texto → Ajustar (iterativo) → Renderizar SVG → [Embedir]
+```
 
 ---
 
 ## Próximos Pasos
 
-1. **Contactar ODI/Diseño Gráfico UCR** - Solicitar acceso a Myriad Pro oficial
-2. **Implementar ejemplos ejecutables** - Crear scripts de los 3 ejemplos documentados
-3. **Probar con Trueno** - Validar alternativa open source mientras se obtiene Myriad Pro
-4. **Validar métricas** - Confirmar tamaños 56mm-110mm se traducen correctamente a puntos/pixeles
-5. **Integrar con templates** - Conectar sistema tipográfico con templates de rótulos (04-architecture.md)
+1. ✅ **Obtener Myriad Pro** - Completado (disponible en `research/examples/02-typography/myriad-pro/`)
+2. 🔄 **Actualizar ejemplos ejecutables** - Modificar scripts para usar Myriad Pro por defecto
+3. 🔄 **Validar métricas** - Confirmar que 56-110mm se traducen correctamente a puntos/pixeles
+4. ⏳ **Integrar con templates** - Conectar sistema tipográfico con templates de rótulos (ver 04-architecture.md)
+5. ⏳ **Testing con datos reales** - Probar con nombres de 20 paradas del sistema bUCR
 
 ---
 
