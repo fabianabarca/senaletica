@@ -22,31 +22,26 @@ Identificar y comparar bibliotecas Python capaces de generar rótulos vectoriale
 **Descripción:** Biblioteca pura Python para crear documentos SVG programáticamente.
 
 **Pros:**
--  SVG nativo (formato ideal para señalética)
+-  SVG nativo, formato ideal para señalética
 -  Control preciso de elementos SVG
 -  Soporte para fuentes web y font-family
 -  Lightweight, sin dependencias pesadas
 -  Documentación clara
 
 **Contras:**
--  No renderiza, solo crea SVG (necesita viewer externo)
--  Medición de texto limitada (requiere cálculos manuales)
+-  No renderiza, solo crea SVG. Necesita viewer externo como Inkscape
+-  Medición de texto limitada, requiere cálculos y programación manual
 -  No font embedding automático
 
 **Caso de uso ideal:** Generación de SVG con especificaciones exactas conocidas de antemano.
 
-**Ejemplo básico:**
-```python
-import svgwrite
+**Ejemplo básico:** Ver [svgwrite_test.py](./examples/svgwrite_test.py)
 
-dwg = svgwrite.Drawing('rotulo.svg', size=('600px', '300px'))
-dwg.add(dwg.circle(center=(300, 150), r=100, fill='#003DA5'))
-dwg.add(dwg.text('Facultad de Ingeniería', 
-                 insert=(300, 150), 
-                 text_anchor='middle',
-                 font_family='Arial',
-                 font_size='24px'))
-dwg.save()
+**Resultado:** Imagen SVG con círculo azul y texto blanco centrado en dos líneas ![svgwrite_test.svg](./examples/svgwrite_test.svg)
+
+**Instalación:**
+```bash
+pip install svgwrite
 ```
 
 **Veredicto:**  Excelente para SVG puro, pero requiere trabajo manual para tipografía.
@@ -72,23 +67,15 @@ dwg.save()
 
 **Caso de uso ideal:** Prototipos rápidos, previews, rótulos digitales.
 
-**Ejemplo básico:**
-```python
-from PIL import Image, ImageDraw, ImageFont
+**Ejemplo básico:** Ver [pillow_test.py](./examples/pillow_test.py)
 
-img = Image.new('RGB', (600, 300), color='white')
-draw = ImageDraw.Draw(img)
+**Resultado:** Imagen PNG raster con círculo azul y texto
 
-font = ImageFont.truetype('/path/to/font.ttf', size=48)
-text = "Facultad de Ingeniería"
-bbox = draw.textbbox((0, 0), text, font=font)
-text_width = bbox[2] - bbox[0]
+![pillow_test.png](./examples/pillow_test.png)
 
-# Centrar texto
-x = (600 - text_width) / 2
-draw.text((x, 150), text, fill='#003DA5', font=font)
-
-img.save('rotulo.png')
+**Instalación:**
+```bash
+pip install Pillow
 ```
 
 **Veredicto:**  Bueno para prototipado, no para producción de señalética.
@@ -114,30 +101,19 @@ img.save('rotulo.png')
 
 **Caso de uso ideal:** Generación profesional multi-formato con renderizado preciso.
 
-**Ejemplo básico:**
-```python
-import cairo
+**Ejemplo básico:** Ver [cairo_test.py](./examples/cairo_test.py)
 
-surface = cairo.SVGSurface('rotulo.svg', 600, 300)
-ctx = cairo.Context(surface)
+**Resultado:** SVG vectorial de alta calidad con renderizado perfecto
 
-# Fondo
-ctx.set_source_rgb(1, 1, 1)
-ctx.paint()
+![cairo_test.svg](./examples/cairo_test.svg)
 
-# Círculo
-ctx.arc(300, 150, 100, 0, 2 * 3.14159)
-ctx.set_source_rgb(0, 0.24, 0.65)  # #003DA5
-ctx.fill()
+**Instalación:**
+```bash
+# Dependencias del sistema (Ubuntu/Debian)
+sudo apt-get install build-essential libcairo2-dev pkg-config python3-dev
 
-# Texto
-ctx.select_font_face("Arial", cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
-ctx.set_font_size(24)
-ctx.set_source_rgb(0, 0, 0)
-ctx.move_to(250, 250)
-ctx.show_text("Facultad de Ingeniería")
-
-surface.finish()
+# Paquete Python
+pip install pycairo
 ```
 
 **Veredicto:**  Mejor opción para producción profesional, a pesar de complejidad.
@@ -163,23 +139,17 @@ surface.finish()
 
 **Caso de uso ideal:** Documentos complejos, reportes, sistemas de impresión masiva.
 
-**Ejemplo básico:**
-```python
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import cm
+**Ejemplo básico:** Ver [reportlab_test.py](./examples/reportlab_test.py)
 
-c = canvas.Canvas('rotulo.pdf', pagesize=letter)
+**Resultado:** Documento PDF vectorial. El archivo generado es [reportlab_test.pdf](./examples/reportlab_test.pdf) (no mostrado directamente en markdown)
 
-# Círculo
-c.setFillColorRGB(0, 0.24, 0.65)
-c.circle(15*cm, 20*cm, 3*cm, fill=1)
+**Instalación:**
+```bash
+pip install reportlab
 
-# Texto
-c.setFont("Helvetica-Bold", 24)
-c.drawCentredString(15*cm, 10*cm, "Facultad de Ingeniería")
-
-c.save()
+# Opcional: para conversión PDF → PNG
+pip install pdf2image
+sudo apt-get install poppler-utils  # dependencia de pdf2image
 ```
 
 **Veredicto:**  Excelente para PDF, pero no es la mejor opción para SVG.
@@ -203,15 +173,15 @@ c.save()
 
 **Caso de uso ideal:** Visualizaciones interactivas, proyectos modernos.
 
-**Ejemplo básico:**
-```python
-import drawsvg as draw
+**Ejemplo básico:** Ver [drawsvg_test.py](./examples/drawsvg_test.py)
 
-d = draw.Drawing(600, 300)
-d.append(draw.Circle(300, 150, 100, fill='#003DA5'))
-d.append(draw.Text('Facultad de Ingeniería', 24, 300, 250, 
-                   text_anchor='middle', font_family='Arial'))
-d.save_svg('rotulo.svg')
+**Resultado:** SVG con API moderna de alto nivel
+
+![drawsvg_test.svg](./examples/drawsvg_test.svg)
+
+**Instalación:**
+```bash
+pip install drawsvg
 ```
 
 **Veredicto:**  Buena alternativa moderna a svgwrite.
@@ -223,12 +193,12 @@ d.save_svg('rotulo.svg')
 | Característica | svgwrite | Pillow | Cairo | ReportLab | drawsvg |
 |----------------|----------|--------|-------|-----------|---------|
 | **Formato nativo** | SVG | PNG | SVG/PDF/PNG | PDF | SVG |
-| **Vectorial** |  |  |  |  |  |
-| **Tipografía custom** |  |  |  |  |  |
-| **Medición texto** |  |  |  |  |  |
-| **Facilidad de uso** |  |  |  |  |  |
+| **Vectorial** | Si | No | Si | Si | Si |
+| **Tipografía custom** | Limitado | Excelente | Excelente | Excelente | Limitado |
+| **Medición texto** | Manual | Automatica | Automatica | Automatica | Manual |
+| **Facilidad de uso** | Alta | Alta | Media | Media | Alta |
 | **Dependencias** | Ninguna | Ninguna | libcairo | Ninguna | Ninguna |
-| **Producción** |  |  |  |  |  |
+| **Producción** | Media | Baja | Alta | Alta | Media |
 | **Curva aprendizaje** | Baja | Baja | Alta | Media | Baja |
 
 ---
@@ -258,11 +228,42 @@ d.save_svg('rotulo.svg')
 
 ## Próximos Pasos
 
-1.  Identificar bibliotecas candidatas
-2.  Crear ejemplos funcionales de cada biblioteca
-3.  Probar con tipografías UCR reales
-4.  Medir performance y calidad de output
-5.  Selección final basada en pruebas
+1. ~~Identificar bibliotecas candidatas~~ (Completado)
+2. ~~Crear ejemplos funcionales de cada biblioteca~~ (Completado)
+3. Probar con tipografías UCR reales
+4. Implementar prototipo con biblioteca seleccionada
+5. Medir performance y calidad de output
+6. Definir arquitectura del sistema rotulador
+
+---
+
+## Conclusiones
+
+Basado en los ejemplos ejecutados y la comparativa técnica:
+
+### Recomendación Final: **pycairo**
+
+**Justificación:**
+- Calidad profesional en renderizado vectorial
+- Soporte robusto para tipografías personalizadas
+- Capacidad de exportar a múltiples formatos (SVG, PNG, PDF)
+- Medición automática de texto para layouts dinámicos
+- Usado en producción por proyectos de gran escala
+- Control preciso sobre cada elemento gráfico
+
+**Trade-offs aceptables:**
+- Requiere dependencias del sistema (libcairo)
+- Curva de aprendizaje más pronunciada
+- Setup inicial más complejo
+
+**Alternativa para MVP rápido:** 
+Si se necesita un prototipo inmediato sin setup de sistema, usar **svgwrite** con cálculos manuales de texto es viable para demostrar el concepto, pero migrar a Cairo para producción.
+
+### Descartadas
+
+- **Pillow:** No cumple requisito de vectorial
+- **ReportLab:** Enfocado en PDF, no es óptimo para SVG
+- **svgwrite/drawsvg:** Adecuados para prototipos, limitados para producción con tipografía compleja
 
 ---
 

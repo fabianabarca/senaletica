@@ -47,7 +47,7 @@ parada_fing.export("parada_fing.svg")
 2. ¿Cómo manejar tipografías personalizadas en Python?
 3. ¿Es LaTeX/TikZ apropiado o es overkill?
 4. ¿Qué arquitectura permitiría escalar a nivel nacional?
-5. ¿Cuándo justifica desarrollar una plataforma completa con base de datos?
+5. ¿Cuándo justifica desarrollar una plataforma completa integrada con base de datos?
 
 ## Estructura de la Investigación
 
@@ -71,18 +71,4 @@ research/
 - **GTFS Spec**: Para integración con sistema de información
 - **INTECO 5.1.1.2**: Norma de tamaño para lectura visual
 
-## Cronograma (8 horas)
-
-| Tarea | Tiempo | Estado |
-|-------|--------|--------|
-| Setup y estructura | 0.5h |  |
-| Investigación bibliotecas Python | 1.5h |  |
-| Análisis tipografías | 1h |  |
-| Evaluación LaTeX | 1h |  |
-| Casos de referencia | 1h |  |
-| Arquitectura propuesta | 2h |  |
-| Documento final | 1h |  |
-
 ---
-
-**Próximo paso:** Investigar bibliotecas Python para generación de gráficos vectoriales.
