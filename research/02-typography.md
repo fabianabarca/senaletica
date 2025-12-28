@@ -44,7 +44,7 @@ Según la documentación de bUCR, normas INTECO y el Manual de Identidad Visual 
 
 El sistema de identidad visual de la Universidad de Costa Rica contempla cuatro familias tipográficas, Myriad Pro es la oficial para rótulos:
 
-#### 1. Myriad Pro (DISPONIBLE)
+#### 1. Myriad Pro
 
 **Especificación:**
 - Tipografía humanista sans-serif por Robert Slimbach y Carol Twombly (1992)
@@ -90,7 +90,7 @@ El sistema de identidad visual de la Universidad de Costa Rica contempla cuatro 
 
 ---
 
-## Manejo de Fuentes con pycairo (Recomendado)
+## Manejo de Fuentes con pycairo
 
 Basado en las conclusiones de [01-python-libraries.md](./01-python-libraries.md), **pycairo** es la biblioteca recomendada para producción. A continuación se detallan las estrategias de manejo tipográfico con esta biblioteca.
 
@@ -221,46 +221,6 @@ print(f"Glyphs: {len(font.getGlyphSet())}")
 ```
 
 **Uso:** Validación de fuente, extracción de métricas, análisis de kerning pairs
-    """
-    Extrae métricas completas de una fuente TrueType/OpenType.
-    """
-    font = TTFont(font_path)
-    
-    # Métricas globales
-    units_per_em = font['head'].unitsPerEm
-    ascent = font['hhea'].ascent
-    descent = font['hhea'].descent
-    line_gap = font['hhea'].lineGap
-    
-    # Información de nombres
-    name_records = font['name']
-    font_family = name_records.getDebugName(1)  # Family name
-    font_subfamily = name_records.getDebugName(2)  # Subfamily
-    
-    return {
-        'family': font_family,
-        'subfamily': font_subfamily,
-        'units_per_em': units_per_em,
-        'ascent': ascent,
-        'descent': descent,
-        'line_gap': line_gap,
-        'line_height': ascent - descent + line_gap
-    }
-
-# Ejemplo de uso
-font_info = analyze_font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
-
-print(f"Fuente: {font_info['family']} {font_info['subfamily']}")
-print(f"Units per EM: {font_info['units_per_em']}")
-print(f"Ascent: {font_info['ascent']}")
-print(f"Descent: {font_info['descent']}")
-```
-
-**Casos de uso:**
-- Validar que se tiene la fuente correcta
-- Calcular line-height preciso
-- Analizar kerning pairs
-- Extraer glyph paths para conversión a SVG paths
 
 ---
 
@@ -468,8 +428,6 @@ Letter-spacing: +21.43px
 1. Renderizar cada letra individualmente con offsets calculados
 2. Usar Pango con `letter-spacing` attribute
 3. Convertir a SVG y aplicar `letter-spacing` CSS
-
----
 
 ---
 
