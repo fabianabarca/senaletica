@@ -40,16 +40,19 @@ def create_multiline_svg():
     """
     Crea SVG con texto en múltiples líneas.
     """
+    import os
+    
     text = "Escuela de Arquitectura y Urbanismo"
-    max_width = 600
-    font_size = 120
-    line_height = 140
+    max_width = 550  # Reducir para evitar cortes
+    font_size = 80   # Tamaño más pequeño
+    line_height = 100
     
     lines = split_and_render(text, max_width, font_size)
     
     total_height = len(lines) * line_height + 100
+    output_path = os.path.join(os.path.dirname(__file__), 'typography_multiline.svg')
     
-    surface = cairo.SVGSurface('typography_multiline.svg', 700, total_height)
+    surface = cairo.SVGSurface(output_path, 700, total_height)
     ctx = cairo.Context(surface)
     
     # Fondo blanco
@@ -58,7 +61,7 @@ def create_multiline_svg():
     
     # Fondo azul para texto
     ctx.set_source_rgb(0, 93/255, 164/255)
-    ctx.rectangle(50, 30, max_width, len(lines) * line_height + 40)
+    ctx.rectangle(75, 30, max_width, len(lines) * line_height + 60)
     ctx.fill()
     
     # Renderizar cada línea
@@ -68,10 +71,10 @@ def create_multiline_svg():
                          cairo.FONT_WEIGHT_BOLD)
     ctx.set_font_size(font_size)
     
-    y_offset = 120
+    y_offset = 100
     for line in lines:
         extents = ctx.text_extents(line)
-        x_pos = 50 + (max_width - extents.width) / 2
+        x_pos = 75 + (max_width - extents.width) / 2
         
         ctx.move_to(x_pos, y_offset)
         ctx.show_text(line)
@@ -88,7 +91,7 @@ def create_multiline_svg():
     ctx.show_text(f"{len(lines)} líneas × {font_size}pt")
     
     surface.finish()
-    print(f"Generated: typography_multiline.svg ({len(lines)} lines)")
+    print(f"Generated: {output_path} ({len(lines)} lines)")
 
 if __name__ == '__main__':
     create_multiline_svg()

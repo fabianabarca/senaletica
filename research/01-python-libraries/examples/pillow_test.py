@@ -3,8 +3,10 @@ Ejemplo de generación de rótulo con Pillow (PIL)
 Genera una imagen raster PNG con círculo y texto
 """
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 # Crear imagen con más ancho para el texto completo
+output_path = os.path.join(os.path.dirname(__file__), 'pillow_test.png')
 img = Image.new('RGB', (700, 300), color='white')
 draw = ImageDraw.Draw(img)
 
@@ -42,14 +44,8 @@ except:
     font_text = ImageFont.load_default()
 
 text = "Facultad de Ingeniería"
-bbox = draw.textbbox((0, 0), text, font=font_text)
-text_width = bbox[2] - bbox[0]
-
-# Centrar texto a la derecha del círculo
-x = 250
-y = 135
-draw.text((x, y), text, fill='#003DA5', font=font_text)
+draw.text((250, 135), text, fill='#003DA5', font=font_text)
 
 # Guardar
-img.save('examples/pillow_test.png')
-print("Generado: pillow_test.png")
+img.save(output_path)
+print(f"Generado: {output_path}")

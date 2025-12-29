@@ -3,8 +3,10 @@ Ejemplo de generación de rótulo con svgwrite
 Genera SVG puro sin dependencias externas
 """
 import svgwrite
+import os
 
-dwg = svgwrite.Drawing('examples/svgwrite_test.svg', size=('600px', '300px'))
+output_path = os.path.join(os.path.dirname(__file__), 'svgwrite_test.svg')
+dwg = svgwrite.Drawing(output_path, size=('600px', '300px'))
 
 # Fondo blanco
 dwg.add(dwg.rect(insert=(0, 0), size=('100%', '100%'), fill='white'))
@@ -33,4 +35,4 @@ dwg.add(dwg.text('Facultad de Ingeniería',
                  fill='#003DA5'))
 
 dwg.save()
-print("Generado: examples/svgwrite_test.svg")
+print(f"Generado: {output_path}")

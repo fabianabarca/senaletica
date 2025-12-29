@@ -30,6 +30,8 @@ def create_test_svg():
     """
     Crea SVG con tres ejemplos de texto ajustado.
     """
+    import os
+    
     texts = [
         "FING",
         "Facultad de Ingeniería",
@@ -39,7 +41,8 @@ def create_test_svg():
     max_width = 600
     height = 400
     
-    surface = cairo.SVGSurface('typography_cairo_measure.svg', 700, height)
+    output_path = os.path.join(os.path.dirname(__file__), 'typography_cairo_measure.svg')
+    surface = cairo.SVGSurface(output_path, 700, height)
     ctx = cairo.Context(surface)
     
     # Fondo blanco
@@ -47,39 +50,38 @@ def create_test_svg():
     ctx.paint()
     
     # Renderizar cada texto
-    y_offset = 100
+    y_offset = 50
     
     for text in texts:
         font_size, width, height_text = measure_and_fit_text(text, max_width)
         
-        # Dibujar fondo azul UCR
-        ctx.set_source_rgb(0, 93/255, 164/255)  # #005DA4
-        ctx.rectangle(50, y_offset - height_text - 10, max_width, height_text + 20)
-        ctx.fill()
-        
-        # Dibujar texto blanco
-        ctx.set_source_rgb(1, 1, 1)
+        # Configurar fuente para medir correctamente
         ctx.select_font_face("DejaVu Sans", 
                              cairo.FONT_SLANT_NORMAL, 
                              cairo.FONT_WEIGHT_BOLD)
         ctx.set_font_size(font_size)
+        extents = ctx.text_extents(text)
+        box_height = extents.height + 40
         
-        ctx.move_to(50 + (max_width - width) / 2, y_offset)
+        # Dibujar fondo azul UCR
+        ctx.set_source_rgb(0, 93/255, 164/255)  # #005DA4
+        ctx.rectangle(50, y_offset, max_width, box_height)
+        ctx.fill()
+        
+        # Dibujar texto blanco centrado horizontal y verticalmente
+        ctx.set_source_rgb(1, 1, 1)
+        x_pos = 50 + (max_width - extents.width) / 2
+        # Usar misma fórmula que multiline_demo.py para centrado vertical
+        y_pos = y_offset + (box_height + extents.height) / 2
+        
+        ctx.move_to(x_pos, y_pos)
         ctx.show_text(text)
         
-        # Info de debug
-        ctx.set_source_rgb(0, 0, 0)
-        ctx.select_font_face("DejaVu Sans", 
-                             cairo.FONT_SLANT_NORMAL, 
-                             cairo.FONT_WEIGHT_NORMAL)
-        ctx.set_font_size(12)
-        ctx.move_to(660, y_offset)
-        ctx.show_text(f"{font_size}pt")
-        
-        y_offset += 120
+        y_offset += box_height + 20
     
     surface.finish()
-    print("Generated: typography_cairo_measure.svg")
+    print(f"Generated: {output_path}")
 
 if __name__ == '__main__':
     create_test_svg()
+

@@ -4,10 +4,12 @@ Genera SVG vectorial de alta calidad
 """
 import cairo
 import math
+import os
 
 # Crear surface SVG con más ancho para el texto completo
 width, height = 700, 300
-surface = cairo.SVGSurface('examples/cairo_test.svg', width, height)
+output_path = os.path.join(os.path.dirname(__file__), 'cairo_test.svg')
+surface = cairo.SVGSurface(output_path, width, height)
 ctx = cairo.Context(surface)
 
 # Fondo blanco
@@ -48,4 +50,4 @@ ctx.show_text(text)
 
 # Finalizar
 surface.finish()
-print("Generado: cairo_test.svg")
+print(f"Generado: {output_path}")

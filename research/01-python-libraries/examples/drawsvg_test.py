@@ -3,6 +3,9 @@ Ejemplo de generación de rótulo con drawsvg
 Genera SVG con API moderna de alto nivel
 """
 import drawsvg as draw
+import os
+
+output_path = os.path.join(os.path.dirname(__file__), 'drawsvg_test.svg')
 
 # Crear drawing
 d = draw.Drawing(600, 300, origin=(0, 0))
@@ -32,5 +35,5 @@ d.append(draw.Text('Facultad de Ingeniería', 32, 250, 150,
                    fill='#003DA5'))
 
 # Guardar
-d.save_svg('examples/drawsvg_test.svg')
-print("Generado: drawsvg_test.svg")
+d.save_svg(output_path)
+print(f"Generado: {output_path}")
