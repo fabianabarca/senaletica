@@ -241,15 +241,22 @@ pip install drawsvg
 
 Basado en los ejemplos ejecutados y la comparativa técnica:
 
-### Recomendación Final: **pycairo**
+### Recomendación Final: **pycairo (Cairo directo)**
 
 **Justificación:**
 - Calidad profesional en renderizado vectorial
-- Soporte robusto para tipografías personalizadas
+- Soporte robusto para tipografías personalizadas con Cairo directo
 - Capacidad de exportar a múltiples formatos (SVG, PNG, PDF)
-- Medición automática de texto para layouts dinámicos
+- Medición automática de texto con `text_extents()` - suficiente para rótulos
 - Usado en producción por proyectos de gran escala
 - Control preciso sobre cada elemento gráfico
+
+**Sobre Pango:**
+- **No es necesario para este proyecto** - Cairo directo es suficiente
+- Ver [custom_font_pango.py](../02-typography/examples/01-font-loading/custom_font_pango.py): presenta problemas de compatibilidad
+- Cairo solo puede: cargar fuentes, renderizar texto, medir dimensiones
+- Multi-línea se puede hacer manualmente (ver [multiline_split.py](../02-typography/examples/03-layout/multiline_split.py))
+- Pango sería útil solo para: text shaping complejo, bidirectional text, scripts complejos (overkill para rótulos simples)
 
 **Trade-offs aceptables:**
 - Requiere dependencias del sistema (libcairo)
@@ -264,7 +271,8 @@ Si se necesita un prototipo inmediato sin setup de sistema, usar **svgwrite** co
 - **Pillow:** No cumple requisito de vectorial
 - **ReportLab:** Enfocado en PDF, no es óptimo para SVG
 - **svgwrite/drawsvg:** Adecuados para prototipos, limitados para producción con tipografía compleja
+- **LaTeX/TikZ:** Evaluado y descartado - overkill para este proyecto, 25-40x más lento que Cairo, dependencias pesadas (2-4 GB), curva de aprendizaje alta. Cairo ofrece calidad suficientemente profesional con mejor performance y mantenibilidad.
 
 ---
 
-**Actualizado:** 28 de diciembre de 2025
+**Actualizado:** 30 de diciembre de 2025

@@ -2,7 +2,7 @@
 
 **Documento:** 02-typography.md  
 **Issue:** bUCR#1 - Automatic sign generator  
-**Fecha:** 28 de diciembre de 2025  
+**Fecha:** 30 de diciembre de 2025  
 **Relacionado con:** [01-python-libraries.md](./01-python-libraries.md)
 
 ---
@@ -70,6 +70,8 @@ El sistema de identidad visual de la Universidad de Costa Rica contempla cuatro 
 ## Especificaciones Oficiales de Rótulos UCR
 
 ### Normativa de Diseño (Manual de Identidad Visual UCR)
+
+**Referencia oficial:** [2019_manual-identidad-visual-web.pdf](./2019_manual-identidad-visual-web.pdf) - Manual de Identidad Visual UCR 2019
 
 **Tipografía y Color:**
 - **Myriad Pro Bold** sobre fondo azul (C100 M75 Y0 K40)
@@ -557,7 +559,7 @@ Test Text: 'Facultad de Ingeniería'
 ### Para Prototipo Rápido (MVP - Fase 1):
 
 **Stack:**
-- **pycairo + Pango** para renderizado vectorial profesional
+- **pycairo (Cairo directo)** para renderizado vectorial profesional
 - **Myriad Pro Bold** (disponible en `research/examples/myriad-pro/MYRIADPRO-BOLD.OTF`)
 - **DejaVu Sans Bold** como fallback para testing rápido
 - Ajuste de tamaño con algoritmo iterativo
@@ -568,7 +570,7 @@ Test Text: 'Facultad de Ingeniería'
 ### Para Producción (Fase 2-3):
 
 **Stack:**
-- **pycairo + Pango** para layout complejo
+- **pycairo (Cairo directo)** para layout complejo
 - **Myriad Pro Bold** (ya disponible)
 - **Base64 embedding** para distribución externa
 - **Path conversion** para impresión profesional
@@ -601,9 +603,9 @@ Cargar fuente → Medir texto → Ajustar (iterativo) → Renderizar SVG → [Em
 1. ✅ **Obtener Myriad Pro** - Completado (disponible en `research/examples/myriad-pro/`)
 2. 🔄 **Actualizar ejemplos ejecutables** - Modificar scripts para usar Myriad Pro por defecto
 3. 🔄 **Validar métricas** - Confirmar que 56-110mm se traducen correctamente a puntos/pixeles
-4. ⏳ **Integrar con templates** - Conectar sistema tipográfico con templates de rótulos (ver 04-architecture.md)
+4. ⏳ **Integrar con templates** - Conectar sistema tipográfico con templates de rótulos (ver 03-architecture.md)
 5. ⏳ **Testing con datos reales** - Probar con nombres de 20 paradas del sistema bUCR
 
 ---
 
-**Actualizado:** 28 de diciembre de 2025
+**Actualizado:** 30 de diciembre de 2025

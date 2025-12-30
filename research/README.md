@@ -54,19 +54,26 @@ parada_fing.export("parada_fing.svg")
 ```
 research/
 ├── README.md (este archivo)
-├── 01-python-libraries.md (comparativa de bibliotecas)
-├── 02-typography.md (manejo de tipografías)
-├── 03-latex-evaluation.md (análisis LaTeX vs Python)
-├── 04-architecture.md (propuesta de arquitectura)
-├── 05-reference-cases.md (MBTA y otros casos)
-├── 06-scalability.md (templates y escalabilidad)
-├── 07-final-specification.md (documento final)
-└── examples/ (ejemplos de código)
+├── 01-python-libraries/
+│   ├── 01-python-libraries.md (comparativa: Cairo seleccionado)
+│   └── examples/ (5 scripts, 5 outputs validados)
+├── 02-typography/
+│   ├── 02-typography.md (Myriad Pro validada)
+│   ├── myriad-pro/ (fuentes oficiales UCR)
+│   └── examples/ (13 scripts, 9 outputs validados)
+├── 03-architecture/
+│   └── 03-architecture.md (diseño completo del paquete)
+├── 04-reference-cases/
+│   └── 04-reference-cases.md (MBTA, TfL, BART)
+├── 05-scalability/
+│   └── 05-scalability.md (estrategia de 3 fases)
+└── 06-final-specification/
+    └── 06-final-specification.md (especificación ejecutiva)
 ```
 
 ## Referencias
 
-- **MBTA SignMaker**: [BIA Wayfinding](https://biasignmaker.com/)
+- **MBTA SignMaker**: [BIA Wayfinding](https://www.bia.studio/take-out/book5/)
 - **Documentación bUCR**: `/docs/respaldo.md`, `/docs/elementos.md`
 - **GTFS Spec**: Para integración con sistema de información
 - **INTECO 5.1.1.2**: Norma de tamaño para lectura visual
