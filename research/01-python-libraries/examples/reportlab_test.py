@@ -3,7 +3,6 @@ Ejemplo de generación de rótulo con ReportLab
 Genera documento PDF vectorial
 """
 from reportlab.pdfgen import canvas
-from reportlab.lib.units import mm
 from reportlab.lib import colors
 import os
 
