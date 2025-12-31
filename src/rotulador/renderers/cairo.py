@@ -61,6 +61,12 @@ class CairoRenderer(Renderer):
             
         self.ctx.move_to(draw_x, draw_y)
         self.ctx.show_text(text)
+
+    def get_text_width(self, text: str, font_family: str, font_size: float) -> float:
+        FontLoader.load_font(self.ctx, font_family)
+        self.ctx.set_font_size(font_size)
+        metrics = TextMetrics(self.ctx, text)
+        return metrics.width
         
     def save(self, filename: str):
         if filename.endswith(".svg"):

@@ -37,18 +37,30 @@ class StopBackTemplate(SignTemplate):
         )
         
         # 5. Nombre de la parada
-        # TODO: Implementar lógica multilínea si el texto es muy largo
-        # Por ahora, renderizado simple de una línea
+        # Ajuste automático de tamaño si el texto es muy largo
+        font_size = Dimensions.FONT_SIZE_TITLE
+        max_width = Dimensions.DEFAULT_WIDTH - Dimensions.TEXT_MARGIN_LEFT - 50 # 50px padding derecho
+        
+        text_width = self.renderer.get_text_width(stop_name, "Myriad Pro", font_size)
+        
+        if text_width > max_width:
+            # Reducir tamaño proporcionalmente
+            scale_factor = max_width / text_width
+            font_size = font_size * scale_factor
+            # Limite inferior para legibilidad
+            if font_size < 24:
+                font_size = 24
+                # Aquí idealmente haríamos word-wrap, pero para MVP reducimos tamaño
         
         # Calcular posición Y para centrar verticalmente respecto al círculo
         # O usar una posición fija como en el diseño original
-        text_y = Dimensions.CIRCLE_Y + (Dimensions.FONT_SIZE_TITLE / 3) # Ajuste visual de baseline
+        text_y = Dimensions.CIRCLE_Y + (font_size / 3) # Ajuste visual de baseline
         
         self.renderer.draw_text(
             stop_name,
             Dimensions.TEXT_MARGIN_LEFT,
             text_y,
-            Dimensions.FONT_SIZE_TITLE,
+            font_size,
             Colors.UCR_BLUE,
             align="left" # Alineado a la izquierda del margen
         )

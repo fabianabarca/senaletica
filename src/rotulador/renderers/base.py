@@ -21,6 +21,10 @@ class Renderer(ABC):
                   color: tuple, font_family: str = "Myriad Pro", align: str = "left"):
         """Dibuja texto"""
         pass
+
+    def get_text_width(self, text: str, font_family: str, font_size: float) -> float:
+        """Calcula el ancho del texto sin dibujarlo (opcional)"""
+        return 0.0
         
     @abstractmethod
     def save(self, filename: str):
