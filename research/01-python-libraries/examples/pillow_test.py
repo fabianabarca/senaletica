@@ -23,7 +23,7 @@ draw.ellipse([
 # Dibujar letra "b" blanca en el círculo
 try:
     font_large = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', size=80)
-except:
+except OSError:
     font_large = ImageFont.load_default()
 
 b_text = "b"
@@ -40,7 +40,7 @@ draw.text(
 # Texto del nombre de parada
 try:
     font_text = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', size=32)
-except:
+except OSError:
     font_text = ImageFont.load_default()
 
 text = "Facultad de Ingeniería"

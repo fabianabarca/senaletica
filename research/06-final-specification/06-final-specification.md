@@ -539,17 +539,29 @@ for stop in feed.stops:
 ```python
 # Django view
 from rotulador import Rotulo
+from pathlib import Path
+import re
+
+SAFE_NAME = re.compile(r"[^a-zA-Z0-9_-]+")
+
+def to_safe_slug(value: str) -> str:
+    slug = SAFE_NAME.sub('-', value or '').strip('-')
+    return slug or 'sign'
 
 def generate_sign_view(request):
     stop_name = request.POST.get('stop_name')
+    safe_name = to_safe_slug(stop_name)
+    output_dir = Path("media/signs")
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     rotulo = Rotulo()
     sign = rotulo.create("stop_back", stop_name)
     
     # Save to storage
-    sign.export(f"media/signs/{stop_name}.svg")
+    target = output_dir / f"{safe_name}.svg"
+    sign.export(str(target))
     
-    return JsonResponse({'url': f'/media/signs/{stop_name}.svg'})
+    return JsonResponse({'url': f'/media/signs/{safe_name}.svg'})
 ```
 
 ### 8.3 MkDocs Documentation
