@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rotulador"
+version = "0.1.0"
+description = "Generador automático de rótulos de paradas para bUCR"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Brandon Trigueros", email = "brandon.trigueros@ucr.ac.cr" },
+]
+dependencies = [
+  "pycairo>=1.20.0",
+]
+
+[project.scripts]
+rotulador = "rotulador.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rotulador"]
