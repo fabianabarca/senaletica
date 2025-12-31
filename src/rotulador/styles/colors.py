@@ -7,6 +7,10 @@ class Colors:
     # Azul UCR (#003DA5)
     # RGB: 0, 61, 165
     UCR_BLUE = (0.0, 0.239, 0.647)
+
+    # Celeste UCR (#00C0F3)
+    # RGB: 0, 192, 243
+    UCR_CELESTE = (0.0, 0.753, 0.953)
     
     # Blanco (#FFFFFF)
     WHITE = (1.0, 1.0, 1.0)

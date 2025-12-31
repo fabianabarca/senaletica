@@ -18,15 +18,6 @@ class CairoRenderer(Renderer):
     def setup(self, width: int, height: int):
         self.width = width
         self.height = height
-        # Por defecto creamos una superficie de grabación (RecordingSurface)
-        # o SVGSurface temporal. Para simplificar, usaremos SVGSurface en memoria o al guardar.
-        # Pero cairo.SVGSurface requiere un filename o file-like object.
-        # Para mantenerlo en memoria hasta save(), podríamos usar RecordingSurface,
-        # pero para el MVP vamos a requerir el filename en setup o cambiar la lógica.
-        # Mejor: setup prepara el contexto, pero save es quien escribe.
-        # Usaremos ImageSurface para raster o SVGSurface directo si sabemos el output.
-        # Para ser agnóstico, usaremos RecordingSurface y luego replay en save().
-        
         self.surface = cairo.RecordingSurface(cairo.CONTENT_COLOR_ALPHA, cairo.Rectangle(0, 0, width, height))
         self.ctx = cairo.Context(self.surface)
         
