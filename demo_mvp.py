@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-Script de demostración del MVP de rotulador.
-"""
 import sys
 import os
 
@@ -9,21 +5,43 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
 
 import rotulador
+from rotulador.utils.parser import RoutesParser
+from rotulador.models import Stop
 
 def main():
     print("Iniciando demo de rotulador MVP...")
     
     try:
-        # 1. Crear rótulo de prueba
-        print("Generando rótulo para 'Facultad de Ingeniería'...")
-        sign = rotulador.create("stop_back", stop_name="Facultad de Ingeniería")
+        # 1. Parsear datos de rutas
+        parser = RoutesParser.from_file("research/05-scalability/routes.md")
+        data = parser.parse()
+        print(f"✓ Parseadas {len(data['routes'])} rutas y {len(data['schedules'])} horarios")
         
-        # 2. Exportar a SVG
+        # 2. Crear StopData para demo
+        stop = Stop(
+            id="facultad_ingenieria",
+            name="Facultad de Ingeniería",
+            latitude=9.937,  # Coordenadas aproximadas UCR
+            longitude=-84.052
+        )
+        
+        from rotulador.models import StopData
+        stop_data = StopData(
+            stop=stop,
+            routes=data['routes'],
+            schedules=data['schedules'][:5]  # Primeros 5 horarios
+        )
+        
+        # 3. Generar rótulo
+        print("Generando rótulo para 'Facultad de Ingeniería'...")
+        sign = rotulador.create("stop_back", stop_data=stop_data)
+        
+        # 4. Exportar a SVG
         output_file = "demo_fing.svg"
         sign.export(output_file)
         print(f"✓ Exportado a {output_file}")
         
-        # 3. Exportar a PNG (si cairo tiene soporte PNG, que usualmente sí)
+        # 5. Exportar a PNG
         output_png = "demo_fing.png"
         sign.export(output_png)
         print(f"✓ Exportado a {output_png}")

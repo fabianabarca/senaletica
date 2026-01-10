@@ -1,6 +1,9 @@
 from .base import SignTemplate
 from ..styles.colors import Colors
 from ..styles.dimensions import Dimensions
+from ..utils.conversion import mm_to_pt
+from ..typography.layout import LayoutEngine
+from ..models import StopData
 
 class StopBackTemplate(SignTemplate):
     """
@@ -8,18 +11,18 @@ class StopBackTemplate(SignTemplate):
     Diseño: Círculo azul con 'b' blanca + Nombre de parada.
     """
     
-    def render(self, stop_name: str):
+    def render(self, stop_data: StopData):
         # 1. Setup canvas
-        self.renderer.setup(Dimensions.DEFAULT_WIDTH, Dimensions.DEFAULT_HEIGHT)
+        self.renderer.setup(Dimensions.get_default_width_pt(), Dimensions.get_default_height_pt())
         
         # 2. Background (Blanco)
         self.renderer.draw_background(Colors.WHITE)
         
         # 3. Círculo Azul
         self.renderer.draw_circle(
-            Dimensions.CIRCLE_X, 
-            Dimensions.CIRCLE_Y, 
-            Dimensions.CIRCLE_RADIUS, 
+            Dimensions.get_circle_x_pt(), 
+            Dimensions.get_circle_y_pt(), 
+            Dimensions.get_circle_radius_pt(), 
             Colors.UCR_BLUE
         )
         
@@ -29,38 +32,34 @@ class StopBackTemplate(SignTemplate):
         # pero el punto de anclaje es el centro del círculo.
         self.renderer.draw_text(
             "b", 
-            Dimensions.CIRCLE_X, 
-            Dimensions.CIRCLE_Y, 
-            Dimensions.FONT_SIZE_B, 
+            Dimensions.get_circle_x_pt(), 
+            Dimensions.get_circle_y_pt(), 
+            Dimensions.get_font_size_b_pt(), 
             Colors.WHITE,
             align="center"
         )
         
         # 5. Nombre de la parada
-        # Ajuste automático de tamaño si el texto es muy largo
-        font_size = Dimensions.FONT_SIZE_TITLE
-        max_width = Dimensions.DEFAULT_WIDTH - Dimensions.TEXT_MARGIN_LEFT - 50 # 50px padding derecho
+        # Usar LayoutEngine para wrapping automático si es necesario
+        layout = LayoutEngine(self.renderer.ctx, font_size=Dimensions.get_font_size_title_pt())
+        max_width = Dimensions.get_default_width_pt() - Dimensions.get_text_margin_left_pt() - mm_to_pt(18)  # 18mm padding derecho
         
-        text_width = self.renderer.get_text_width(stop_name, "Myriad Pro", font_size)
+        lines = layout.wrap_text(stop_data.stop.name, max_width)
         
-        if text_width > max_width:
-            # Reducir tamaño proporcionalmente
-            scale_factor = max_width / text_width
-            font_size = font_size * scale_factor
-            # Limite inferior para legibilidad
-            if font_size < 24:
-                font_size = 24
-                # Aquí idealmente haríamos word-wrap, pero para MVP reducimos tamaño
+        # Si hay múltiples líneas, ajustar font_size si no cabe verticalmente
+        text_height = layout.get_text_height(lines)
+        available_height = Dimensions.get_default_height_pt() - Dimensions.get_circle_y_pt() - mm_to_pt(20)  # 20mm desde círculo
         
-        # Calcular posición Y para centrar verticalmente respecto al círculo
-        # O usar una posición fija como en el diseño original
-        text_y = Dimensions.CIRCLE_Y + (font_size / 3) # Ajuste visual de baseline
+        if text_height > available_height and len(lines) > 1:
+            # Reducir font_size proporcionalmente
+            scale_factor = available_height / text_height
+            new_font_size = Dimensions.get_font_size_title_pt() * scale_factor
+            if new_font_size < mm_to_pt(8):  # 8mm mínimo
+                new_font_size = mm_to_pt(8)
+            layout = LayoutEngine(self.renderer.ctx, font_size=new_font_size)
+            lines = layout.wrap_text(stop_name, max_width)
         
-        self.renderer.draw_text(
-            stop_name,
-            Dimensions.TEXT_MARGIN_LEFT,
-            text_y,
-            font_size,
-            Colors.UCR_BLUE,
-            align="left" # Alineado a la izquierda del margen
-        )
+        # Posición Y: empezar desde abajo del círculo
+        start_y = Dimensions.get_circle_y_pt() + Dimensions.get_circle_radius_pt() + mm_to_pt(10)  # 10mm abajo del círculo
+        
+        layout.draw_multiline_text(lines, Dimensions.get_text_margin_left_pt(), start_y, Colors.UCR_BLUE, align="left")

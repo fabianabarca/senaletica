@@ -30,7 +30,19 @@ class Rotulo:
             
         if sign_type == SignType.STOP_BACK:
             template = StopBackTemplate(self.renderer)
-            template.render(**kwargs)
+            # Para compatibilidad, si pasan stop_name, convertir a StopData
+            if 'stop_name' in kwargs:
+                from .models import Stop, StopData
+                stop = Stop(
+                    id=kwargs['stop_name'].lower().replace(' ', '_'),
+                    name=kwargs['stop_name'],
+                    latitude=0.0,
+                    longitude=0.0
+                )
+                stop_data = StopData(stop=stop, routes=[], schedules=[])
+                template.render(stop_data)
+            else:
+                template.render(kwargs['stop_data'])
         else:
             raise NotImplementedError(f"El tipo {sign_type} no está implementado aún.")
             
