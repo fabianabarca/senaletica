@@ -4,6 +4,57 @@
 
 ---
 
+## ⚠️ PRE-REQUISITO: Consolidación de Ramas Existentes
+
+**Antes de iniciar Fase 2, es IMPERATIVO consolidar el contenido de las ramas `rotulos`, `gh-pages` y `prueba-jose` para evitar duplicación de esfuerzos y aprovechar especificaciones técnicas existentes.**
+
+### Información Nueva Identificada
+
+Tras análisis exhaustivo de las ramas existentes, se encontró contenido crítico no presente en el research actual:
+
+#### Rama `rotulos` (Más Relevante)
+- **Assets gráficos completos:** 40+ archivos SVG/PNG de logos, símbolos y plantillas (b_azul.svg, parada_vertical.svg, etc.)
+- **Especificaciones técnicas detalladas:**
+  - Paleta de colores oficial: Celeste UCR (#00C0F3), Azul UCR (#005DA4), Verde UCR (#6DC067)
+  - Dimensiones exactas: Logo "b" 45-60cm diámetro, texto 300-400pt (10-14cm)
+  - Dos tipos de rótulos: Vertical (poste) y Horizontal (respaldo)
+  - Tipografía: Myriad Pro Bold, tamaños 56-110mm (INTECO compliant)
+- **Referencias normativas:** PDFs oficiales (identidad_visual_ucr_3.1.pdf, norma_INTE_W5_2021.pdf)
+- **Documentación técnica:** elementos.md, infraestructura.md, respaldo.md con especificaciones completas
+
+#### Rama `gh-pages`
+- Sitio web generado con MkDocs (despliegue automático)
+- Documentación pública del proyecto
+
+#### Rama `prueba-jose`
+- Contenido inicial similar a `rotulos`, sin actualizaciones significativas
+
+### Plan de Consolidación
+
+1. **Merge de `rotulos` a `main`:**
+   - Integrar assets gráficos (SVG/PNG) al directorio `docs/assets/`
+   - Actualizar documentación con especificaciones técnicas de elementos.md, infraestructura.md
+   - Resolver conflictos con archivos existentes (ej: colores en research/)
+
+2. **Actualización del Research:**
+   - Incorporar paleta de colores oficial y dimensiones exactas
+   - Actualizar especificaciones de plantillas con medidas reales (45-60cm)
+   - Integrar referencias normativas (PDFs INTECO, identidad visual)
+
+3. **Limpieza de Ramas:**
+   - Archivar `prueba-jose` (sin valor adicional)
+   - Mantener `gh-pages` para despliegues futuros
+
+### Impacto en Fase 2
+Esta consolidación permitirá:
+- **Precisión técnica:** Usar dimensiones y colores oficiales en lugar de aproximaciones
+- **Assets listos:** SVG de plantillas para implementar templates complejos
+- **Cumplimiento normativo:** Asegurar conformidad con INTECO y UCR desde el inicio
+
+**Tiempo estimado:** 4-6 horas para merge y actualización de research.
+
+---
+
 ## 1. Migración a Unidades Físicas (Milímetros)
 
 El sistema actual utiliza píxeles arbitrarios. Para impresión profesional, es imperativo trabajar con dimensiones físicas reales.
