@@ -228,3 +228,76 @@ Desde las Deportivas hacia Educación o Artes Plásticas sin vuelta a la milla u
 | L1   | LANAMME Sentido suroeste | Junto al parqueo del Centro de Transferencia Tecnológica (CTT), diagonal al Laboratorio Nacional de Materiales y Modelos Estructurales (LANAMME), al otro lado de la calle |
 | L1   | Educación Opción 1     | Frente al jardín de la Facultad de Educación (FE) |
 | L1   | Artes Plásticas Opción 2 | Nuevo edificio de la Escuela de Artes Plásticas (EAP) |
+
+
+Leyenda del Mapa
+El diagrama identifica dos líneas de servicio mediante colores:
+
+Línea Naranja (L1): Ruta más larga con bucles y paradas adicionales.
+
+Línea Verde (L2): Ruta más directa ("express").
+
+Distribución por Fincas y Paradas
+El recorrido atraviesa tres sectores principales (Fincas). A continuación se detallan las paradas de izquierda a derecha según el mapa:
+
+1. Finca 1 (Inicio del recorrido)
+En este sector, las líneas se comportan de manera diferente:
+
+Paradas comunes (Ambas líneas):
+
+Educación (Punto de inicio/final).
+
+Artes Plásticas.
+
+Paradas exclusivas de la Línea Naranja:
+
+Ciencias de la Salud.
+
+Microbiología. (Nota visual: La línea verde "salta" estas dos paradas, yendo directo de Artes Plásticas a Finca 2).
+
+2. Finca 2 (Sector intermedio)
+Este sector tiene un tronco central compartido y un desvío de retorno exclusivo para la línea naranja.
+
+Tronco Central (Ambas líneas pasan por aquí):
+
+LANAMME.
+
+Ingeniería.
+
+Ciencias Sociales.
+
+INIE.
+
+CICCA.
+
+Desvío de Retorno (Exclusivo Línea Naranja): Al regresar de Finca 3, la línea naranja hace un arco inferior para cubrir:
+
+Nutrición.
+
+Parqueo Integral.
+
+CIMPA.
+
+3. Finca 3 (Final del recorrido)
+Ambas líneas cubren exactamente las mismas paradas en este sector:
+
+Deportivas.
+
+EDUFI.
+
+Odontología (Punto de retorno).
+
+Resumen del Comportamiento Visual de las Líneas
+Línea Verde (L2 en el gráfico):
+
+Tiene un diseño lineal y directo.
+
+Conecta Finca 1 y Finca 3 pasando por el centro de Finca 2 sin desviarse a las paradas secundarias de salud o investigación (CIMPA/Nutrición).
+
+Línea Naranja (L1 en el gráfico):
+
+Tiene un diseño envolvente.
+
+En Finca 1 baja para recoger pasajeros en el sector salud (Odontología vieja/Microbiología).
+
+En Finca 2 (durante el retorno) baja para cubrir el sector de Nutrición y Matemática (CIMPA).

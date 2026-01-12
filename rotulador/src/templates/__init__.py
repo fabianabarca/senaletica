@@ -1,0 +1,1 @@
+from .vertical import VerticalPostTemplate
