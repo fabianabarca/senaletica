@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="600" height="300" viewBox="0 0 600 300">
+<defs>
+</defs>
+<rect x="0" y="0" width="600" height="300" fill="white" />
+<circle cx="150" cy="150" r="80" fill="#003DA5" />
+<text x="150" y="150" font-size="80" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-weight="bold" fill="white">b</text>
+<text x="250" y="150" font-size="32" text-anchor="start" dominant-baseline="middle" font-family="sans-serif" font-weight="bold" fill="#003DA5">Facultad de Ingeniería</text>
+</svg>
